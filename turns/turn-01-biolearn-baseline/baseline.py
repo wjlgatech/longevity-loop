@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Turn 01 — Biolearn baseline: does PhenoAge age-acceleration beat chronological
-age at predicting the challenge outcome?
+"""Turn 01 — Systems-Age-motivated baseline.
 
-SCAFFOLD: the structure + metric are real; the two spots that need the actual
-challenge dataset are marked `# TODO(you)`. It is honest by construction — it
-computes a real Δ across seeds and refuses to invent numbers. Fill PROOF.md from
-its printed output (report the null if the CIs overlap).
+Question (Levine 2025): does CROSS-CLOCK DISAGREEMENT add predictive signal over
+the single best clock? We compute a panel of epigenetic clocks, then compare
+outcome AUROC of [best single clock] vs [best single + across-clock std].
 
-Docs: https://bio-learn.github.io/  ·  clocks via biolearn or pyaging.
+SCAFFOLD: the metric + comparison are real and runnable once you wire (a) the
+Biolearn challenge data and (b) the clock panel (`# TODO(you)`). It computes a real
+Δ across seeds and refuses to fabricate data or scores. Fill PROOF.md from the
+output (report the null if the CIs overlap).
+
+Docs: https://bio-learn.github.io/  ·  clocks: biolearn ModelGallery or pyaging.
 """
 from __future__ import annotations
 
@@ -26,52 +29,62 @@ SEEDS = [0, 1, 2, 3, 4]
 def load_challenge():
     """Return (meth_df, chrono_age: np.ndarray, outcome: np.ndarray[0/1]).
 
-    TODO(you): wire the real Biomarkers-of-Aging Challenge data via Biolearn, e.g.
-
+    TODO(you): wire the Biomarkers-of-Aging Challenge data via Biolearn, e.g.
         from biolearn.data_library import DataLibrary
-        data = DataLibrary().get("<challenge_dataset_id>").load()
-        meth, meta = data.dnam, data.metadata
-        return meth, meta["age"].values, (meta["outcome"] == 1).astype(int).values
-
-    Until then this raises — we do NOT fabricate data.
+        d = DataLibrary().get("<challenge_dataset_id>").load()
+        return d.dnam, d.metadata["age"].values, (d.metadata["outcome"] == 1).astype(int).values
+    We do NOT fabricate data.
     """
-    raise NotImplementedError("Wire the Biolearn challenge dataset here (see docstring).")
+    raise NotImplementedError("Wire the Biolearn challenge dataset (see docstring).")
 
 
-def phenoage_acceleration(meth_df, chrono_age) -> np.ndarray:
-    """PhenoAge age-acceleration = PhenoAge - chronological age.
+def clock_panel(meth_df, chrono_age) -> dict[str, np.ndarray]:
+    """Return {clock_name: age_acceleration} for a panel of clocks.
 
-    TODO(you): compute PhenoAge with Biolearn or pyaging, e.g.
+    TODO(you): compute several clocks with Biolearn/pyaging and return
+    (predicted_age - chronological_age) per clock, e.g.
         from biolearn.model_gallery import ModelGallery
-        pheno = ModelGallery().get("PhenoAge").predict(meth_df)["predicted"].values
-        return pheno - chrono_age
+        g = ModelGallery()
+        return {n: g.get(n).predict(meth_df)["predicted"].values - chrono_age
+                for n in ["Horvathv1", "PhenoAge", "GrimAgeV2", "DunedinPACE"]}
     """
-    raise NotImplementedError("Compute PhenoAge via Biolearn/pyaging (see docstring).")
+    raise NotImplementedError("Compute a clock panel via Biolearn/pyaging (see docstring).")
 
 
-def _auc(x1d: np.ndarray, y: np.ndarray, seed: int) -> float:
-    xtr, xte, ytr, yte = train_test_split(x1d.reshape(-1, 1), y, test_size=0.3,
-                                          random_state=seed, stratify=y)
+def _auc(X: np.ndarray, y: np.ndarray, seed: int) -> float:
+    xtr, xte, ytr, yte = train_test_split(X, y, test_size=0.3, random_state=seed, stratify=y)
     clf = LogisticRegression(max_iter=1000).fit(xtr, ytr)
     return roc_auc_score(yte, clf.predict_proba(xte)[:, 1])
 
 
 def main() -> int:
     meth, chrono, outcome = load_challenge()
-    accel = phenoage_acceleration(meth, chrono)
-    pheno_auc = np.array([_auc(accel, outcome, s) for s in SEEDS])
-    chrono_auc = np.array([_auc(chrono, outcome, s) for s in SEEDS])
-    delta = pheno_auc - chrono_auc
+    panel = clock_panel(meth, chrono)                    # {name: accel[n]}
+    names = list(panel)
+    A = np.column_stack([panel[n] for n in names])       # [n_samples, n_clocks]
+
+    # best single clock (by its own solo AUROC on seed 0)
+    solo = {n: _auc(A[:, [i]], outcome, 0) for i, n in enumerate(names)}
+    best_i = int(np.argmax([solo[n] for n in names]))
+    best = A[:, [best_i]]
+    hetero = A.std(axis=1, keepdims=True)                # cross-clock disagreement
+    combo = np.hstack([best, hetero])
+
+    single_auc = np.array([_auc(best, outcome, s) for s in SEEDS])
+    combo_auc = np.array([_auc(combo, outcome, s) for s in SEEDS])
+    delta = combo_auc - single_auc
     result = {
+        "anchor": "Levine, Systems Age (Nature Aging 2025)",
         "metric": "outcome AUROC (5 seeds)",
-        "phenoage_accel": {"mean": float(pheno_auc.mean()), "std": float(pheno_auc.std())},
-        "chronological": {"mean": float(chrono_auc.mean()), "std": float(chrono_auc.std())},
+        "best_single_clock": names[best_i],
+        "single": {"mean": float(single_auc.mean()), "std": float(single_auc.std())},
+        "single_plus_heterogeneity": {"mean": float(combo_auc.mean()), "std": float(combo_auc.std())},
         "delta_mean": float(delta.mean()), "delta_std": float(delta.std()),
-        "verdict": "improves" if delta.mean() - delta.std() > 0 else "no improvement (null)",
+        "verdict": "heterogeneity helps" if delta.mean() - delta.std() > 0 else "no lift (null)",
     }
     OUT.write_text(json.dumps(result, indent=2))
     print(json.dumps(result, indent=2))
-    print("\nNow fill PROOF.md — report the verdict honestly, including a null.")
+    print("\nFill PROOF.md honestly (incl. a null), then @DrMorganLevine with the artifact.")
     return 0
 
 

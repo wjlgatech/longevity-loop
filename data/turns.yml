@@ -5,7 +5,7 @@
   title: "Biolearn baseline on the Biomarkers of Aging Challenge"
   stage: "VERIFY"
   status: scaffolded
-  question: "Does a standard epigenetic clock (e.g. PhenoAge) predict the challenge outcome better than chronological age on a held-out split?"
+  question: "Motivated by Levine's Systems Age (2025): does cross-clock DISAGREEMENT (heterogeneity across a clock panel) add predictive signal over the best single clock on the Biomarkers-of-Aging open data?"
   path: "turns/turn-01-biolearn-baseline"
   proof: "turns/turn-01-biolearn-baseline/PROOF.md"
 - id: "turn-02-biofm-finetune"
