@@ -48,6 +48,12 @@ principles:
     evidence:
       - { file: "Makefile" }
       - { grep: "audit|validate|--check", file: "Makefile" }
+  - id: executions-evald
+    statement: "Roadmap executions are checkboxes with a before→after eval; a `done` box requires a real result."
+    evidence:
+      - { file: "data/executions.yml" }
+      - { file: "scripts/eval.py" }
+      - { grep: "before|after", file: "data/executions.yml" }
   - id: frontier-tracked
     statement: "We follow the frontier: recent works (verified) + a refreshable live tracker + a field graph."
     evidence:

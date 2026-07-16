@@ -41,6 +41,19 @@ function render(DB) {
     esc(t.question), esc(t.stage), `<span class="chip ${t.status}">${icon[t.status] || ""} ${esc(t.status)}</span>`,
   ]));
 
+  // Roadmap execution — checkbox + before→after eval
+  if ((DB.executions || []).length) {
+    const done = DB.executions.filter(e => e.done).length;
+    section("✅ Roadmap Execution", `${done}/${DB.executions.length} done (${Math.round(100*done/DB.executions.length)}%). A box ticks only with a real before→after eval — no fake ✅.`);
+    const ul = el("ul"); ul.style.listStyle = "none"; ul.style.paddingLeft = "0";
+    DB.executions.forEach(e => ul.appendChild(el("li", null, `${e.done ? "✅" : "⬜"} <b>${esc(e.id)}</b> <span class="sub">${esc(e.phase||"")}</span> — ${esc(e.item)}`)));
+    $("#app").appendChild(ul);
+    table(["Execution", "Metric", "Before", "After"], DB.executions.map(e => {
+      const ev = e.eval || {};
+      return [`${e.done ? "✅" : "⬜"} ${esc(e.id)}`, esc(ev.metric||"—"), esc(ev.before||"—"), esc(ev.after||"—")];
+    }));
+  }
+
   // Frontier Radar + congregational graph
   if ((DB.frontier || []).length) {
     section("🛰️ Frontier Radar", "Groundbreakers' most recent deep works — verified link + real quote. Refreshed weekly by scripts/track.py.");

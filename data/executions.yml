@@ -1,0 +1,79 @@
+# Roadmap execution ledger — every execution has a CHECKBOX (done) + an EVAL
+# (before → after difference). Discipline (enforced by scripts/eval.py): a `done`
+# execution MUST carry a real before AND after (no "pending") — no evidence ⇒ not done.
+# Foundation items completed this build are checked with real before/after; the
+# SCIENCE turns stay open with pending evals (no fabricated results).
+- id: E1
+  phase: "P1 · Foundation"
+  item: "Stand up the AI-native loop (repo + self-audit + gated `make check`)"
+  done: true
+  eval: { metric: "loop self-audit /100", before: "n/a (no repo)", after: "100 (9 principles, gated in CI)" }
+  proof: "scripts/audit.py · make check green"
+- id: E2
+  phase: "P1 · Foundation"
+  item: "Map the field into a verified knowledge base"
+  done: true
+  eval: { metric: "curated, URL-verified entries", before: "0", after: "~75 (16 researchers, 16 startups, 26 tools, 17 ecosystem)" }
+  proof: "data/{people,startups,stack,ecosystem}.yml"
+- id: E3
+  phase: "P1 · Foundation"
+  item: "Ship the build-in-public surface (README + live dashboard)"
+  done: true
+  eval: { metric: "public live artifacts", before: "none", after: "public repo + GitHub Pages dashboard + generated README" }
+  proof: "https://wjlgatech.github.io/longevity-loop/"
+- id: E4
+  phase: "P1 · Foundation"
+  item: "Follow the frontier: radar + live tracker + field graph"
+  done: true
+  eval: { metric: "frontier signal", before: "0 tracked", after: "10 verified recent works + weekly arXiv/GitHub tracker + 60-node bi-temporal graph" }
+  proof: "data/frontier.yml · scripts/track.py · site/graph.html"
+- id: E5
+  phase: "P1 · Foundation"
+  item: "Scaffold the first two loop turns (runnable, honest, PROOF-gated)"
+  done: true
+  eval: { metric: "runnable loop turns", before: "0", after: "2 scaffolded (Turn 01 Biolearn/Systems-Age; Turn 02 bio-FM fine-tune)" }
+  proof: "turns/turn-01-biolearn-baseline · turns/turn-02-biofm-finetune"
+
+# ── SCIENCE (needs data + compute — YOU run these; eval stays pending, never faked) ──
+- id: E6
+  phase: "P1 · First Signal"
+  item: "Run Turn 01 — Systems-Age heterogeneity test on the Biomarkers-of-Aging data"
+  done: false
+  eval: { metric: "outcome AUROC Δ (best single clock vs +cross-clock heterogeneity), 5 seeds", before: "pending", after: "pending" }
+  proof: "turns/turn-01-biolearn-baseline/PROOF.md"
+- id: E7
+  phase: "P1 · First Signal"
+  item: "First public leaderboard submission (Biolearn / Biomarkers Challenge)"
+  done: false
+  eval: { metric: "public leaderboard rank / percentile", before: "not entered", after: "pending" }
+  proof: "-"
+- id: E8
+  phase: "P2 · Momentum"
+  item: "Run Turn 02 — fine-tune an open bio-FM vs a frozen probe (age prediction)"
+  done: false
+  eval: { metric: "held-out age MAE, frozen probe vs fine-tuned", before: "pending", after: "pending" }
+  proof: "turns/turn-02-biofm-finetune/PROOF.md"
+- id: E9
+  phase: "P2 · Momentum"
+  item: "Ship an open tool a lab actually adopts"
+  done: false
+  eval: { metric: "external users / adopters", before: "0", after: "pending" }
+  proof: "-"
+- id: E10
+  phase: "P2 · Momentum"
+  item: "Secure 1 named academic/industry collaborator"
+  done: false
+  eval: { metric: "named collaborators", before: "0", after: "pending" }
+  proof: "-"
+- id: E11
+  phase: "P3 · Leverage"
+  item: "Close a non-dilutive micro-grant (VitaDAO / Foresight)"
+  done: false
+  eval: { metric: "non-dilutive funding secured", before: "$0", after: "pending" }
+  proof: "-"
+- id: E12
+  phase: "P3 · Leverage"
+  item: "Preprint OR top-decile leaderboard finish"
+  done: false
+  eval: { metric: "preprint posted / leaderboard percentile", before: "none", after: "pending" }
+  proof: "-"

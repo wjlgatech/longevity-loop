@@ -143,6 +143,42 @@ Convert signal into a preprint, non-dilutive funding, and a deliberate fork in t
 
 ---
 
+<h2 id="execution">✅ Roadmap Execution</h2>
+
+**5/12 done (42%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
+
+- [x] **E1** (P1 · Foundation) — Stand up the AI-native loop (repo + self-audit + gated `make check`)
+- [x] **E2** (P1 · Foundation) — Map the field into a verified knowledge base
+- [x] **E3** (P1 · Foundation) — Ship the build-in-public surface (README + live dashboard)
+- [x] **E4** (P1 · Foundation) — Follow the frontier: radar + live tracker + field graph
+- [x] **E5** (P1 · Foundation) — Scaffold the first two loop turns (runnable, honest, PROOF-gated)
+- [ ] **E6** (P1 · First Signal) — Run Turn 01 — Systems-Age heterogeneity test on the Biomarkers-of-Aging data
+- [ ] **E7** (P1 · First Signal) — First public leaderboard submission (Biolearn / Biomarkers Challenge)
+- [ ] **E8** (P2 · Momentum) — Run Turn 02 — fine-tune an open bio-FM vs a frozen probe (age prediction)
+- [ ] **E9** (P2 · Momentum) — Ship an open tool a lab actually adopts
+- [ ] **E10** (P2 · Momentum) — Secure 1 named academic/industry collaborator
+- [ ] **E11** (P3 · Leverage) — Close a non-dilutive micro-grant (VitaDAO / Foresight)
+- [ ] **E12** (P3 · Leverage) — Preprint OR top-decile leaderboard finish
+
+### Eval reports — before → after
+
+| Execution | Metric | Before | After |
+|---|---|---|---|
+| ✅ E1 | loop self-audit /100 | n/a (no repo) | 100 (9 principles, gated in CI) |
+| ✅ E2 | curated, URL-verified entries | 0 | ~75 (16 researchers, 16 startups, 26 tools, 17 ecosystem) |
+| ✅ E3 | public live artifacts | none | public repo + GitHub Pages dashboard + generated README |
+| ✅ E4 | frontier signal | 0 tracked | 10 verified recent works + weekly arXiv/GitHub tracker + 60-node bi-temporal graph |
+| ✅ E5 | runnable loop turns | 0 | 2 scaffolded (Turn 01 Biolearn/Systems-Age; Turn 02 bio-FM fine-tune) |
+| ⬜ E6 | outcome AUROC Δ (best single clock vs +cross-clock heterogeneity), 5 seeds | pending | pending |
+| ⬜ E7 | public leaderboard rank / percentile | not entered | pending |
+| ⬜ E8 | held-out age MAE, frozen probe vs fine-tuned | pending | pending |
+| ⬜ E9 | external users / adopters | 0 | pending |
+| ⬜ E10 | named collaborators | 0 | pending |
+| ⬜ E11 | non-dilutive funding secured | $0 | pending |
+| ⬜ E12 | preprint posted / leaderboard percentile | none | pending |
+
+---
+
 <h2 id="people">🧠 Researchers</h2>
 
 🤖 = AI-forward · 💬 = active in the open community (good first contacts).

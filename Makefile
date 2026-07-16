@@ -1,4 +1,4 @@
-.PHONY: build validate audit site graph track check help
+.PHONY: build validate audit eval site graph track check help
 
 help:
 	@echo "longevity-loop — an AI-native compounding loop for aging science"
@@ -16,6 +16,10 @@ validate:
 audit:
 	python3 scripts/audit.py --gate 80
 
+# Roadmap checkbox + before→after eval; fails if a `done` item has no real eval.
+eval:
+	python3 scripts/eval.py --gate
+
 site:
 	python3 scripts/build_site.py
 	python3 scripts/build_graph.py
@@ -27,6 +31,7 @@ graph:
 track:
 	python3 scripts/track.py
 
-# Finish line: data well-formed, still an AI-native loop, and generated docs match.
-check: validate audit
+# Finish line: data well-formed, still an AI-native loop, executions honestly
+# eval'd (no fake ✅), and generated docs match.
+check: validate audit eval
 	python3 scripts/build.py --check

@@ -31,6 +31,7 @@ def render_readme() -> str:
     meta, loop, road = load("meta"), load("loop"), load("roadmap")
     people, startups, stack, eco = load("people"), load("startups"), load("stack"), load("ecosystem")
     turns, frontier, reflections = load("turns"), load("frontier"), load("reflections")
+    execs = load("executions")
     slug = f"{meta['repo_owner']}/{meta['repo_name']}"
     L: list[str] = []
 
@@ -97,6 +98,25 @@ def render_readme() -> str:
     L += ["**Signal ladder** (each rung recruits the next):", ""]
     L += [f"{i}. {esc(r)}" for i, r in enumerate(road["signal_ladder"], 1)]
     L += ["", "---", ""]
+
+    # Roadmap execution — checkbox + before→after eval
+    if execs:
+        done = sum(1 for e in execs if e.get("done"))
+        pct = round(100 * done / len(execs))
+        L += ['<h2 id="execution">✅ Roadmap Execution</h2>', "",
+              f"**{done}/{len(execs)} done ({pct}%).** Each execution is a checkbox with a before→after "
+              "eval; a box only ticks with a real result (`done` requires a non-pending before AND after — "
+              "no evidence ⇒ not done, gated in CI).", ""]
+        for e in execs:
+            box = "x" if e.get("done") else " "
+            L.append(f"- [{box}] **{esc(e['id'])}** ({esc(e.get('phase',''))}) — {esc(e['item'])}")
+        L += ["", "### Eval reports — before → after", "",
+              "| Execution | Metric | Before | After |", "|---|---|---|---|"]
+        for e in execs:
+            ev = e.get("eval") or {}
+            mark = "✅ " if e.get("done") else "⬜ "
+            L.append(f"| {mark}{esc(e['id'])} | {esc(ev.get('metric','—'))} | {esc(ev.get('before','—'))} | {esc(ev.get('after','—'))} |")
+        L += ["", "---", ""]
 
     # Landscape
     L += ['<h2 id="people">🧠 Researchers</h2>', "",
