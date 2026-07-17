@@ -4,6 +4,14 @@
   <link>https://wjlgatech.github.io/longevity-loop/writings/</link>
   <description>Build-in-public daily recaps for an AI x longevity research loop.</description>
   <item>
+    <title>A Day the Flywheel Coasted</title>
+    <link>https://wjlgatech.github.io/longevity-loop/writings/2026-07-17.html</link>
+    <guid isPermaLink="true">https://wjlgatech.github.io/longevity-loop/writings/2026-07-17.html</guid>
+    <category>longevity-loop</category>
+    <pubDate>2026-07-17</pubDate>
+    <description>Today was pure scaffolding: a single chore commit to the daily recap tooling, no files changed and no synthesis. Rather than dress that up, this recap uses the flywheel model to explain why a coasting day still counts — maintenance keeps friction low so the next real push spins further. Honest ledger, no invented results.</description>
+  </item>
+<item>
     <title>Building the Flywheel Before Spinning It</title>
     <link>https://wjlgatech.github.io/longevity-loop/writings/2026-07-16.html</link>
     <guid isPermaLink="true">https://wjlgatech.github.io/longevity-loop/writings/2026-07-16.html</guid>
@@ -11,5 +19,4 @@
     <pubDate>2026-07-16</pubDate>
     <description>Today was scaffolding, not science. I built the pipeline that watches the aging-research frontier, drafts roadmap updates from real Europe PMC records, and gates every proposal behind human review. The synthesizer surfaced newer reviews from Wyss-Coray, Gladyshev, and Barzilai — but all are unpromoted drafts flagged &#x27;confirm identity first.&#x27; Turn-01 got anchored to Levine&#x27;s Systems Age. No wet-lab results, no verified frontier claims. Just a flywheel that now has all its parts and is ready to start turning.</description>
   </item>
-
 </channel></rss>
