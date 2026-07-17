@@ -36,6 +36,7 @@ Run a single script directly, e.g. `python3 scripts/audit.py --gate 80` or `pyth
 - `scripts/track.py` — refreshes live arXiv + GitHub signal into the GENERATED `data/_frontier.yml`. arXiv rate-limits hard (429), so it degrades gracefully and never blocks. Note: `frontier.yml` (curated, hand-authored, verified quotes) and `_frontier.yml` (generated, live) are different files.
 - `scripts/eval.py` — reads `data/executions.yml` and enforces the honest-eval rule: an execution marked `done: true` must carry a real `eval.before` AND `eval.after` (never "pending"/empty). `--gate` exits non-zero on a violation, so CI blocks a fake ✅. Part of `make check`.
 - `scripts/synthesize.py` — the frontier→roadmap synthesizer. For each tracked researcher it finds the most recent aging-relevant publication via **Europe PMC** (covers journals + bioRxiv, unlike arXiv-only `track.py`), diffs it against curated `data/frontier.yml`, and writes DRAFT proposals (frontier updates + roadmap-delta signal) to the GENERATED `data/_synthesis.md`. Human-gated by design: it never edits `frontier.yml`/`roadmap.yml`, flags every match `⚠ Confirm identity` (surname+initials ≠ proof), and records "none found" rather than invent. A person promotes what's real.
+- `scripts/clockbench.py` — cross-clock disagreement benchmark (attacks `docs/gaps-analysis.md` G1, the measurement gap). Deterministic, stdlib-only (`statistics`), with `--selftest` (wired into `make check`), `--demo` (synthetic panel), and a `--input clocks.csv` seam for real `pyaging`/Biolearn clock outputs. Writes `data/_clockbench.{md,json}`.
 - `scripts/recap.py` — the daily build-in-public recap generator. Signal-gated: skips days with no new commits / synthesis change (no filler). On signal it asks Claude (Opus 4.8, adaptive thinking, effort=high) to write a four-rubric explainer, then renders a self-contained page under `site/writings/` (with a templated animated SVG) plus an RSS item in `site/feed.xml` (`<category>` is cosmetic — the portfolio tags articles by the *source label*, so register the feed with label `longevity-loop`). `--dry-run` renders a deterministic offline placeholder (no API, no tokens) so the pipeline is testable in CI.
 
 ## Data files (`data/`)
@@ -44,8 +45,8 @@ Content lives here. Files consumed by `build.py`/`build_site.py`: `meta`, `loop`
 
 - `loop.yml` is dual-purpose: its `stages` render the README's loop table, and its `principles` (with `evidence` file/grep checks) are what `audit.py` scores. Adding a principle means adding real, checkable evidence in the repo.
 - `stack.yml` entries need a `kind` (`model`/`tool`/`clock`/`dataset`/`benchmark`) — `build.py` groups the stack section by kind.
-- `executions.yml` — the roadmap-execution ledger `eval.py` gates (checkbox + before→after per execution). Not consumed by `build.py` (doesn't render into README).
-- Underscore-prefixed files are GENERATED review artifacts, tracked but not hand-edited: `_frontier.yml` (from `track.py`) and `_synthesis.md` (from `synthesize.py`). Neither is read by `build.py`/`validate.py`, so they don't affect `make check`.
+- `executions.yml` — the roadmap-execution ledger `eval.py` gates (checkbox + before→after per execution). **Rendered into README's Execution section by `build.py`**, so editing it means `make build` before `make check` (drift gate) — same as any other rendered data file.
+- Underscore-prefixed files are GENERATED review artifacts, tracked but not hand-edited: `_frontier.yml` (`track.py`), `_synthesis.md` (`synthesize.py`), `_clockbench.{md,json}` (`clockbench.py`). None are read by `build.py`/`validate.py`, so they don't affect `make check`.
 
 ## Turns (`turns/turn-NN-*/`)
 

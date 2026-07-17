@@ -1,4 +1,4 @@
-.PHONY: build validate audit eval site graph track synthesize recap-dry check help
+.PHONY: build validate audit eval site graph track synthesize recap-dry clockbench check help
 
 help:
 	@echo "longevity-loop — an AI-native compounding loop for aging science"
@@ -7,7 +7,8 @@ help:
 	@echo "  make audit       Self-audit vs the AI-native loop principles (data/loop.yml)"
 	@echo "  make track       Refresh live arXiv/GitHub signal into data/_frontier.yml"
 	@echo "  make synthesize  Draft frontier+roadmap proposals into data/_synthesis.md (human-gated)"
-	@echo "  make check       validate + audit + eval + build drift-gate (CI finish line)"
+	@echo "  make clockbench  Cross-clock disagreement benchmark (measures gaps-analysis G1)"
+	@echo "  make check       validate + audit + eval + clockbench selftest + build drift-gate (CI finish line)"
 
 build:
 	python3 scripts/build.py
@@ -43,7 +44,13 @@ synthesize:
 recap-dry:
 	python3 scripts/recap.py --since HEAD~3 --dry-run
 
+# Cross-clock disagreement benchmark (docs/gaps-analysis.md G1). Runs the synthetic
+# demo; plug real pyaging/Biolearn clock outputs via `--input clocks.csv`.
+clockbench:
+	python3 scripts/clockbench.py --demo
+
 # Finish line: data well-formed, still an AI-native loop, executions honestly
-# eval'd (no fake ✅), and generated docs match.
+# eval'd (no fake ✅), the clock-disagreement metric self-verifies, and generated docs match.
 check: validate audit eval
+	python3 scripts/clockbench.py --selftest
 	python3 scripts/build.py --check
