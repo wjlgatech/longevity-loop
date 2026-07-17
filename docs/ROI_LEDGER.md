@@ -95,3 +95,14 @@ A bridge ships only if after > before on a real, checkable metric AND the impact
 2. **Nothing published outward** this run (no site/portfolio change) — so merge is the only gate.
 3. Out-of-scope-by-design (not attempted): wet-lab validation, a decisive aging theory, funding
    structure — flagged in gaps-analysis.md so the omissions are honest, not silent.
+
+## Final state
+- **PR #3** (`auto/longevity-gaps` → `main`) open, **CI green** (`check` + `links`). Merge = your call.
+- One CI-hygiene fix en route: lychee flagged `agingpharma.org` (456 anti-bot; 200 in a browser) →
+  added 456 to the accept-list (matches the file's existing 403/429 handling). Reversible.
+
+## Recommended NEXT bridge (stopped here on ROI grounds — needs your greenlight)
+- **G4 — an honest-nulls registry.** Recurs in all 3 windows (graveyards: resveratrol/NAD/young
+  blood/rapamycin-exercise null) and is the repo's own stated differentiation. Cheap, reversible,
+  on-brand. Judged the marginal ROI of auto-adding it now — while you can't steer — lower than
+  shipping one excellent verified bridge + this recommendation. Say the word and it's the next run.
