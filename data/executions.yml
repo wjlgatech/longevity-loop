@@ -123,3 +123,12 @@
     before: "none — graveyards recur every window (resveratrol, NAD, young blood, monkey glands) but are unrecorded"
     after: "data/nulls.yml (6 cited entries) → generated docs/NULLS.md + README section, schema-gated in validate.py"
   proof: "data/nulls.yml · docs/NULLS.md · scripts/build.py · make check"
+- id: E19
+  phase: "P1 · Foundation"
+  item: "Bridge gaps-analysis G2 (reproducibility / FAIR): a datasheet + FAIR scorecard for open aging datasets"
+  done: true
+  eval:
+    metric: "FAIR/reproducibility scored + gated for the open aging datasets the loop uses"
+    before: "none — no FAIR/metadata standard; datasets picked ad hoc, reproducibility implicit"
+    after: "data/datasets.yml (7 datasets) → scripts/fair.py → docs/FAIR.md scorecard; panel 86/100; gate fails on any unassessed dim; CI-wired"
+  proof: "data/datasets.yml · scripts/fair.py · docs/FAIR.md · make check"

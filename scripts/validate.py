@@ -15,6 +15,7 @@ REQUIRED = {
     "ecosystem": ["name", "url", "type"],
     "frontier": ["name", "recent_work", "link"],
     "nulls": ["name", "url", "verdict"],
+    "datasets": ["name", "url", "access"],
 }
 
 

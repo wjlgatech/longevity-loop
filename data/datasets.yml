@@ -1,0 +1,77 @@
+# FAIR datasheet for the open aging datasets this loop uses — bridges gaps-analysis.md G2
+# (data integrity & reproducibility: "no FAIR data + metadata standards for multi-omic aging
+# data", "where is the queryable data?"). A datasheet-for-datasets + an honest FAIR self-
+# assessment, scored by scripts/fair.py → docs/FAIR.md.
+#
+# fair.* ∈ yes | partial | no (unknown ⇒ record `no`, never a fake pass — no evidence ⇒ No).
+# Assessments are conservative and evidence-noted; they describe accessibility/format/licensing
+# as of this writing, not a verdict on the data's scientific value.
+- name: "Tabula Muris Senis"
+  url: "https://registry.opendata.aws/tabula-muris-senis/"
+  access: open
+  license: "CC-BY-4.0"
+  format: "AnnData/h5ad + loom (standard single-cell)"
+  persistent_id: "AWS Open Data registry + figshare DOI"
+  load: "aws s3 sync s3://czb-tabula-muris-senis/ . --no-sign-request  # or figshare download"
+  fair: { findable: "yes", accessible: "yes", interoperable: "yes", reusable: "yes" }
+  note: "Registered open dataset, open license, standard formats, documented — the FAIR exemplar here."
+
+- name: "Human Cell Atlas"
+  url: "https://data.humancellatlas.org/"
+  access: open
+  license: "CC-BY-4.0"
+  format: "AnnData/loom (HCA standard schema)"
+  persistent_id: "HCA project UUIDs"
+  load: "Browse the Data Portal → download by project UUID (or use the hca-util / matrix API)."
+  fair: { findable: "yes", accessible: "yes", interoperable: "yes", reusable: "yes" }
+  note: "Standardized schema + open license across projects."
+
+- name: "Biomarkers of Aging Challenge (Biolearn)"
+  url: "https://www.longevityprize.com/prize/biomarker"
+  access: open
+  license: "challenge terms (open, code-only)"
+  format: "standardized methylation/proteomics/outcomes via Biolearn"
+  persistent_id: "Biolearn dataset ids"
+  load: "pip install biolearn; from biolearn.data_library import DataLibrary  # standardized loaders"
+  fair: { findable: "yes", accessible: "yes", interoperable: "yes", reusable: "yes" }
+  note: "The North-Star leaderboard set; Biolearn gives one standardized loader interface."
+
+- name: "NCBI GEO"
+  url: "https://www.ncbi.nlm.nih.gov/geo/"
+  access: open
+  license: "US-Gov public domain; per-series terms vary by submitter"
+  format: "varied (submitter-dependent: matrices, CEL, supplementary)"
+  persistent_id: "GEO GSE / GSM accessions"
+  load: "GEOparse.get_GEO('GSExxxxx')  # accession is the stable handle"
+  fair: { findable: "yes", accessible: "yes", interoperable: "partial", reusable: "partial" }
+  note: "Stable accessions + open access, but format/metadata quality varies per submitter (I/R partial)."
+
+- name: "HAGR (GenAge / CellAge)"
+  url: "https://genomics.senescence.info/"
+  access: open
+  license: "CC-BY / academic use"
+  format: "CSV/TSV curated tables"
+  persistent_id: "HAGR entry IDs (stable URLs)"
+  load: "Download GenAge/CellAge CSVs from the HAGR download pages."
+  fair: { findable: "yes", accessible: "yes", interoperable: "partial", reusable: "yes" }
+  note: "Curated + documented; custom table schema rather than a community standard (I partial)."
+
+- name: "GTEx Portal"
+  url: "https://gtexportal.org/"
+  access: open
+  license: "GTEx Terms (expression open; genotypes dbGaP-controlled)"
+  format: "TSV expression matrices; VCF (protected)"
+  persistent_id: "dbGaP phs000424"
+  load: "Download bulk expression TSVs from the portal; genotypes need dbGaP approval."
+  fair: { findable: "yes", accessible: "partial", interoperable: "yes", reusable: "partial" }
+  note: "Expression downloads freely; genotype/protected tiers are access-controlled (A/R partial)."
+
+- name: "UK Biobank"
+  url: "https://www.ukbiobank.ac.uk/use-our-data/apply-for-access/"
+  access: gated
+  license: "UK Biobank Access Agreement (application + fee)"
+  format: "standardized field IDs; cloud-only RAP"
+  persistent_id: "UKB field IDs / showcase"
+  load: "Apply for access → analyse on the Research Analysis Platform (not laptop-downloadable)."
+  fair: { findable: "yes", accessible: "no", interoperable: "yes", reusable: "partial" }
+  note: "Well-documented + standardized, but access-gated (application/fee/cloud-only) — Accessible: no."

@@ -1,4 +1,4 @@
-.PHONY: build validate audit eval site graph track synthesize recap-dry clockbench check help
+.PHONY: build validate audit eval site graph track synthesize recap-dry clockbench fair check help
 
 help:
 	@echo "longevity-loop — an AI-native compounding loop for aging science"
@@ -8,7 +8,8 @@ help:
 	@echo "  make track       Refresh live arXiv/GitHub signal into data/_frontier.yml"
 	@echo "  make synthesize  Draft frontier+roadmap proposals into data/_synthesis.md (human-gated)"
 	@echo "  make clockbench  Cross-clock disagreement benchmark (measures gaps-analysis G1)"
-	@echo "  make check       validate + audit + eval + clockbench selftest + build drift-gate (CI finish line)"
+	@echo "  make fair        Score open aging datasets for FAIR/reproducibility → docs/FAIR.md (G2)"
+	@echo "  make check       validate + audit + eval + clockbench + fair + build drift-gate (CI finish line)"
 
 build:
 	python3 scripts/build.py
@@ -49,8 +50,15 @@ recap-dry:
 clockbench:
 	python3 scripts/clockbench.py --demo
 
-# Finish line: data well-formed, still an AI-native loop, executions honestly
-# eval'd (no fake ✅), the clock-disagreement metric self-verifies, and generated docs match.
+# Score the open aging datasets against FAIR → docs/FAIR.md (docs/gaps-analysis.md G2).
+fair:
+	python3 scripts/fair.py
+
+# Finish line: data well-formed, still an AI-native loop, executions honestly eval'd
+# (no fake ✅), the clock-disagreement + FAIR metrics self-verify, and generated docs match.
 check: validate audit eval
 	python3 scripts/clockbench.py --selftest
+	python3 scripts/fair.py --selftest
+	python3 scripts/fair.py --gate
+	python3 scripts/fair.py --check
 	python3 scripts/build.py --check
