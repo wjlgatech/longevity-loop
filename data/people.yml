@@ -16,3 +16,4 @@
 - { name: "Charles Brenner", org: "City of Hope", known_for: "NAD+ metabolism; vocal longevity-hype skeptic (a good reality check)", url: "https://x.com/CharlesMBrenner", ai_forward: false, approachable: true }
 - { name: "Joe Betts-LaCroix", org: "Retro Biosciences", known_for: "reprogramming + autophagy longevity company", url: "https://x.com/bettslacroix", ai_forward: false, approachable: true }
 - { name: "Kristen Fortney", org: "BioAge Labs", known_for: "ML on longitudinal human data for aging drug discovery", url: "https://bioagelabs.com", ai_forward: true, approachable: false }
+- { name: "Marinka Zitnik", org: "Harvard Medical School (Zitnik Lab / mims-harvard)", known_for: "AI agents for medicine; therapeutic reasoning over biomedical tools (ATHENA, ToolUniverse); graph ML for therapeutics", url: "https://zitniklab.hms.harvard.edu", ai_forward: true, approachable: true }

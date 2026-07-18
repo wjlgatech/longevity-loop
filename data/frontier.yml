@@ -81,3 +81,11 @@
   link: "https://onlinelibrary.wiley.com/doi/10.1002/jcsm.70274"
   repo: "-"
   future_direction: "Test alternative rapamycin dosing/timing (e.g. mTORC1 cycling) before combining with exercise in older adults."
+- name: "Marinka Zitnik"
+  recent_work: "ATHENA-R1: An AI agent for treatment reasoning over a biomedical tool universe"
+  year: 2026
+  summary: "RL-trained agent (fine-tuned Qwen3-8B) that reasons over 200+ biomedical tools via ToolUniverse; reported to beat GPT-5 on drug- and treatment-prediction benchmarks. A research artifact, explicitly not a medical device."
+  quote: "ATHENA-R1 is an AI agent for treatment reasoning, trained through reinforcement learning over a universe of biomedical tools."
+  link: "https://github.com/mims-harvard/ATHENA"
+  repo: "https://github.com/mims-harvard/ATHENA"
+  future_direction: "A shared, open biomedical tool library (ToolUniverse) as the reusable substrate other agents — including a longevity loop — can reason over."
