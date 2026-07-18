@@ -28,7 +28,7 @@ Run a single script directly, e.g. `python3 scripts/audit.py --gate 80` or `pyth
 
 `data/*.yml` → scripts → generated outputs. **Never hand-edit generated files** — edit the YAML and rerun the generator. CI drift-gates this: `build.py --check` fails if `README.md` or `docs/ROADMAP.md` don't match what the current data would produce.
 
-- `scripts/build.py` — renders `README.md` + `docs/ROADMAP.md`. With `--check`, compares instead of writing (the drift gate).
+- `scripts/build.py` — renders `README.md` + `docs/ROADMAP.md` + `docs/NULLS.md`. With `--check`, compares instead of writing (the drift gate).
 - `scripts/validate.py` — schema gate. `REQUIRED` dict defines required fields per file; also enforces `http(s)` URLs and no duplicate URLs.
 - `scripts/audit.py` — scores `data/loop.yml`'s `principles` from real repo evidence (a file must exist, or a `grep` regex must match). No evidence ⇒ the principle fails. `--gate N` exits non-zero below N so CI blocks a regression in *how* the project works.
 - `scripts/build_site.py` — compiles `data/*.yml` → `site/data.json` (dashboard consumes it, so the live site can't drift from the README).
@@ -46,6 +46,7 @@ Content lives here. Files consumed by `build.py`/`build_site.py`: `meta`, `loop`
 - `loop.yml` is dual-purpose: its `stages` render the README's loop table, and its `principles` (with `evidence` file/grep checks) are what `audit.py` scores. Adding a principle means adding real, checkable evidence in the repo.
 - `stack.yml` entries need a `kind` (`model`/`tool`/`clock`/`dataset`/`benchmark`) — `build.py` groups the stack section by kind.
 - `executions.yml` — the roadmap-execution ledger `eval.py` gates (checkbox + before→after per execution). **Rendered into README's Execution section by `build.py`**, so editing it means `make build` before `make check` (drift gate) — same as any other rendered data file.
+- `nulls.yml` — the honest-nulls registry (longevity claims that failed/were refuted/returned a clean null; bridges gaps-analysis G4). Schema-gated by `validate.py` (`name`/`url`/`verdict`) and **rendered to `docs/NULLS.md` + a README section by `build.py`**. Note: quote `verdict: "null"` — bare `null` is YAML `None` and fails the gate.
 - Underscore-prefixed files are GENERATED review artifacts, tracked but not hand-edited: `_frontier.yml` (`track.py`), `_synthesis.md` (`synthesize.py`), `_clockbench.{md,json}` (`clockbench.py`). None are read by `build.py`/`validate.py`, so they don't affect `make check`.
 
 ## Turns (`turns/turn-NN-*/`)

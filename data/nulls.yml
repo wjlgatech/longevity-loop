@@ -1,0 +1,62 @@
+# The honest-nulls registry — longevity interventions/claims that FAILED, were REFUTED,
+# or returned a clean NULL. Bridges gaps-analysis.md G4 (hype outruns evidence; nulls go
+# unrecorded, so each generation re-learns the same failures). High-trust signal, and the
+# repo's own "no evidence ⇒ no claim" discipline made durable.
+#
+# verdict: refuted (evidence against) | failed (halted / no benefit + risk) | null (clean
+# negative result) | unproven (biomarker moved, no hard outcome yet).
+# Every entry cites a real source (verified during the 2026-07-17 research run). Rendered to
+# docs/NULLS.md by scripts/build.py — do not hand-edit generated docs.
+- name: "Resveratrol / sirtuin-activating compounds (Sirtris SRT501)"
+  url: "https://www.science.org/content/blog-post/gsk-sirtris-wrap-up"
+  verdict: refuted
+  class: "sirtuin activators"
+  year: "2010–2013"
+  what_happened: "GSK acquired Sirtris (~$720M), then halted SRT501; independent work traced the reported activation to assay artifacts."
+  lesson: "In-vitro activation ≠ in-vivo benefit — watch for assay-artifact confounds before scaling."
+  window: "30-year survival"
+
+- name: "Antioxidant supplements for longevity (free-radical theory)"
+  url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4678534/"
+  verdict: refuted
+  class: "antioxidants"
+  year: "2007–2015"
+  what_happened: "Mortality meta-analyses found no benefit; some antioxidants (beta-carotene, vitamin E) modestly increased mortality."
+  lesson: "A compelling mechanism (oxidative damage) does not survive controlled outcome trials."
+  window: "30-year survival"
+
+- name: "Young-blood plasma transfusion (Ambrosia)"
+  url: "https://www.nbcnews.com/health/aging/young-blood-company-ambrosia-halts-patient-treatments-after-fda-warning-n973266"
+  verdict: failed
+  class: "parabiosis-inspired"
+  year: "2019"
+  what_happened: "Pay-to-participate transfusions halted after an FDA warning; no demonstrated benefit, real risks."
+  lesson: "Striking mouse parabiosis data + paid 'trials' are not human evidence — regulators intervened."
+  window: "30-year survival"
+
+- name: "NAD+ boosters (NMN / NR) for human longevity"
+  url: "https://www.gethealthspan.com/research/article/nad-boosters"
+  verdict: unproven
+  class: "NAD metabolism"
+  year: "2016–2025"
+  what_happened: "Human trials show target engagement (raised NAD+) but no demonstrated healthspan/lifespan outcome; the mouse→human jump remains unmet."
+  lesson: "A moved biomarker (NAD+ up) is not a hard outcome — the exact biomarker-vs-endpoint gap (G3)."
+  window: "30-year survival · 30-day engagement"
+
+- name: "Weekly rapamycin to boost exercise gains in older adults (RAPA-EX-01)"
+  url: "https://onlinelibrary.wiley.com/doi/10.1002/jcsm.70274"
+  verdict: "null"
+  class: "geroscience / mTOR"
+  year: "2026"
+  what_happened: "RCT (40 adults, 65–85): once-weekly 6 mg rapamycin did NOT enhance — and may have slightly blunted — functional gains from a 13-week exercise programme, with more adverse events."
+  lesson: "A clean, useful negative result — exactly the high-trust signal this registry exists to preserve."
+  window: "30-day engagement"
+
+- name: "Monkey-gland (testicular) grafts for rejuvenation (Voronoff)"
+  url: "https://www.atlasobscura.com/articles/the-true-story-of-dr-voronoffs-plan-to-use-monkey-testicles-to-make-us-immortal"
+  verdict: refuted
+  class: "gland/hormone rejuvenation"
+  year: "1920s"
+  what_happened: "Wildly popular surgical 'rejuvenation' of its era; entirely discredited — the cautionary tale every rejuvenation-hype generation re-learns."
+  lesson: "High-status, high-demand longevity hype has a centuries-long failure record; humility is the prior."
+  window: "300-year civilizational"

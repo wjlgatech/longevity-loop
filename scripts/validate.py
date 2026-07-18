@@ -14,6 +14,7 @@ REQUIRED = {
     "stack": ["name", "url", "kind"],
     "ecosystem": ["name", "url", "type"],
     "frontier": ["name", "recent_work", "link"],
+    "nulls": ["name", "url", "verdict"],
 }
 
 
