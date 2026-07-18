@@ -93,6 +93,10 @@ The frontier groundbreakers' most recent deep works — verified, with a link + 
   RCT (40 adults, 65-85) found once-weekly 6 mg rapamycin did NOT boost — and may have slightly blunted — functional gains from a 13-week exercise program, with more adverse events. A clean, useful negative result.
   > "did not enhance, and in sensitivity analyses, it may have modestly attenuated short-term functional improvements from a home exercise programme"
   → _Future:_ Test alternative rapamycin dosing/timing (e.g. mTORC1 cycling) before combining with exercise in older adults.
+- **Marinka Zitnik** — [ATHENA-R1: An AI agent for treatment reasoning over a biomedical tool universe](https://github.com/mims-harvard/ATHENA) _(2026)_
+  RL-trained agent (fine-tuned Qwen3-8B) that reasons over 200+ biomedical tools via ToolUniverse; reported to beat GPT-5 on drug- and treatment-prediction benchmarks. A research artifact, explicitly not a medical device.
+  > "ATHENA-R1 is an AI agent for treatment reasoning, trained through reinforcement learning over a universe of biomedical tools."
+  → _Future:_ A shared, open biomedical tool library (ToolUniverse) as the reusable substrate other agents — including a longevity loop — can reason over.
 
 **🕸️ Congregational view:** the field as a spatiotemporal knowledge graph (modeled after [getzep/graphiti](https://github.com/getzep/graphiti)) — **[open the field graph →](https://wjlgatech.github.io/longevity-loop/graph.html)**.
 
@@ -153,7 +157,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 
 <h2 id="execution">✅ Roadmap Execution</h2>
 
-**8/19 done (42%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
+**9/20 done (45%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
 
 - [x] **E1** (P1 · Foundation) — Stand up the AI-native loop (repo + self-audit + gated `make check`)
 - [x] **E2** (P1 · Foundation) — Map the field into a verified knowledge base
@@ -174,6 +178,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - [x] **E17** (P1 · Foundation) — Bridge gaps-analysis G1 (measurement): a standardized, reproducible cross-clock disagreement benchmark
 - [x] **E18** (P1 · Foundation) — Bridge gaps-analysis G4 (hype outruns evidence): an open honest-nulls registry
 - [x] **E19** (P1 · Foundation) — Bridge gaps-analysis G2 (reproducibility / FAIR): a datasheet + FAIR scorecard for open aging datasets
+- [x] **E20** (P1 · Foundation) — Learn from mims-harvard/ATHENA; integrate the frontier signal into the field map
 
 ### Eval reports — before → after
 
@@ -198,6 +203,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 | ✅ E17 | a shared, reproducible way to quantify how much a clock panel disagrees | none — clocks contradict each other, no consensus metric (triangulated across all 3 research windows) | clockbench.py — deterministic Spearman-agreement benchmark + CI selftest; demo panel headline 0.315, outlier auto-detected; real-data seam via --input |
 | ✅ E18 | a shared, cited registry of longevity nulls/failures (so the field stops re-learning them) | none — graveyards recur every window (resveratrol, NAD, young blood, monkey glands) but are unrecorded | data/nulls.yml (6 cited entries) → generated docs/NULLS.md + README section, schema-gated in validate.py |
 | ✅ E19 | FAIR/reproducibility scored + gated for the open aging datasets the loop uses | none — no FAIR/metadata standard; datasets picked ad hoc, reproducibility implicit | data/datasets.yml (7 datasets) → scripts/fair.py → docs/FAIR.md scorecard; panel 86/100; gate fails on any unassessed dim; CI-wired |
+| ✅ E20 | external frontier work studied → integrated (cited) into the loop | ATHENA / ToolUniverse / Zitnik not tracked; no study on file | research/athena-study.md (cited analysis) + Zitnik (people), ATHENA-R1 (frontier), ToolUniverse (stack) added; finding: ATHENA's citation-allow-list = our existing no-evidence-no-claim; RAG/multi-agent/ToolUniverse overkill for a solo code-only loop |
 
 ---
 
@@ -238,6 +244,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - **[Charles Brenner](https://x.com/CharlesMBrenner)** 💬 — City of Hope: NAD+ metabolism; vocal longevity-hype skeptic (a good reality check)
 - **[Joe Betts-LaCroix](https://x.com/bettslacroix)** 💬 — Retro Biosciences: reprogramming + autophagy longevity company
 - **[Kristen Fortney](https://bioagelabs.com)** 🤖 — BioAge Labs: ML on longitudinal human data for aging drug discovery
+- **[Marinka Zitnik](https://zitniklab.hms.harvard.edu)** 🤖💬 — Harvard Medical School (Zitnik Lab / mims-harvard): AI agents for medicine; therapeutic reasoning over biomedical tools (ATHENA, ToolUniverse); graph ML for therapeutics
 
 ---
 
@@ -279,6 +286,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - **[CZ CELLxGENE Census](https://github.com/chanzuckerberg/cellxgene-census)** — API to slice ~33M+ standardized cells by tissue/age/disease in seconds — fastest cohort pull.
 - **[pyaging](https://github.com/rsinghlab/pyaging)** — PyTorch package bundling 50+ aging clocks with one API — score biological age on a laptop.
 - **[Biolearn](https://bio-learn.github.io/)** — Open standardized platform for the Biomarkers of Aging Challenge — the code-only leaderboard to compete on.
+- **[ToolUniverse](https://github.com/mims-harvard/ToolUniverse)** — Open library of 200+ biomedical tools (drugs/targets/disease APIs) behind one interface — the agent tool layer ATHENA reasons over; a substrate a longevity agent could plug into.
 
 ### Clocks
 - **[scAge](https://github.com/alex-trapp/scAge)** — Epigenetic age from sparse single-cell methylation — detect cell-level aging + rejuvenation.

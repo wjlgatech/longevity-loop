@@ -132,3 +132,12 @@
     before: "none — no FAIR/metadata standard; datasets picked ad hoc, reproducibility implicit"
     after: "data/datasets.yml (7 datasets) → scripts/fair.py → docs/FAIR.md scorecard; panel 86/100; gate fails on any unassessed dim; CI-wired"
   proof: "data/datasets.yml · scripts/fair.py · docs/FAIR.md · make check"
+- id: E20
+  phase: "P1 · Foundation"
+  item: "Learn from mims-harvard/ATHENA; integrate the frontier signal into the field map"
+  done: true
+  eval:
+    metric: "external frontier work studied → integrated (cited) into the loop"
+    before: "ATHENA / ToolUniverse / Zitnik not tracked; no study on file"
+    after: "research/athena-study.md (cited analysis) + Zitnik (people), ATHENA-R1 (frontier), ToolUniverse (stack) added; finding: ATHENA's citation-allow-list = our existing no-evidence-no-claim; RAG/multi-agent/ToolUniverse overkill for a solo code-only loop"
+  proof: "research/athena-study.md · data/{people,frontier,stack}.yml · make check"
