@@ -5,15 +5,20 @@ Question (Levine 2025): does CROSS-CLOCK DISAGREEMENT add predictive signal over
 the single best clock? We compute a panel of epigenetic clocks, then compare
 outcome AUROC of [best single clock] vs [best single + across-clock std].
 
-SCAFFOLD: the metric + comparison are real and runnable once you wire (a) the
-Biolearn challenge data and (b) the clock panel (`# TODO(you)`). It computes a real
-Δ across seeds and refuses to fabricate data or scores. Fill PROOF.md from the
-output (report the null if the CIs overlap).
+Run it two ways:
+  python baseline.py --demo   # runs end-to-end NOW on a deterministic SYNTHETIC panel —
+                              # proves the harness computes a real Δ. NOT a scientific result.
+  python baseline.py          # the real run (E6): needs the Biolearn challenge data +
+                              # clock panel wired below (`# TODO(you)`). Refuses to fabricate.
+
+The disagreement feature here is the same quantity scripts/clockbench.py standardizes
+(docs/gaps-analysis.md G1). Fill PROOF.md from a REAL run (report the null if CIs overlap).
 
 Docs: https://bio-learn.github.io/  ·  clocks: biolearn ModelGallery or pyaging.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import pathlib
 
@@ -24,6 +29,23 @@ from sklearn.model_selection import train_test_split
 
 OUT = pathlib.Path(__file__).parent / "results.json"
 SEEDS = [0, 1, 2, 3, 4]
+
+
+def demo_panel() -> tuple[np.ndarray, dict[str, np.ndarray], np.ndarray]:
+    """A deterministic SYNTHETIC panel so the pipeline runs end-to-end today. A latent
+    biological-age acceleration is viewed by four clocks with increasing noise; the outcome
+    depends on BOTH the true acceleration AND cross-clock disagreement — so a correct harness
+    should detect a positive Δ. This is a construction to prove the code, NOT a finding."""
+    rng = np.random.default_rng(0)
+    n = 300
+    chrono = rng.uniform(40, 80, n)
+    true_accel = rng.normal(0, 5, n)
+    panel = {f"Clock{i+1}": true_accel + rng.normal(0, s, n)
+             for i, s in enumerate((1.0, 1.5, 2.0, 4.0))}
+    disagreement = np.column_stack(list(panel.values())).std(axis=1)
+    logit = 0.25 * true_accel + 0.6 * (disagreement - disagreement.mean()) + rng.normal(0, 1, n)
+    outcome = (logit > np.median(logit)).astype(int)
+    return chrono, panel, outcome
 
 
 def load_challenge():
@@ -57,9 +79,12 @@ def _auc(X: np.ndarray, y: np.ndarray, seed: int) -> float:
     return roc_auc_score(yte, clf.predict_proba(xte)[:, 1])
 
 
-def main() -> int:
-    meth, chrono, outcome = load_challenge()
-    panel = clock_panel(meth, chrono)                    # {name: accel[n]}
+def main(demo: bool = False) -> int:
+    if demo:
+        chrono, panel, outcome = demo_panel()            # SYNTHETIC — proves the harness
+    else:
+        meth, chrono, outcome = load_challenge()         # real run (E6)
+        panel = clock_panel(meth, chrono)                # {name: accel[n]}
     names = list(panel)
     A = np.column_stack([panel[n] for n in names])       # [n_samples, n_clocks]
 
@@ -75,6 +100,8 @@ def main() -> int:
     delta = combo_auc - single_auc
     result = {
         "anchor": "Levine, Systems Age (Nature Aging 2025)",
+        "mode": "SYNTHETIC demo (deterministic; NOT a scientific result)" if demo
+                else "real Biolearn challenge data",
         "metric": "outcome AUROC (5 seeds)",
         "best_single_clock": names[best_i],
         "single": {"mean": float(single_auc.mean()), "std": float(single_auc.std())},
@@ -84,9 +111,16 @@ def main() -> int:
     }
     OUT.write_text(json.dumps(result, indent=2))
     print(json.dumps(result, indent=2))
-    print("\nFill PROOF.md honestly (incl. a null), then @DrMorganLevine with the artifact.")
+    if demo:
+        print("\n⚠ SYNTHETIC demo — proves the harness, not a result. Real run needs the "
+              "Biolearn data (E6); then fill PROOF.md and @DrMorganLevine with the artifact.")
+    else:
+        print("\nFill PROOF.md honestly (incl. a null), then @DrMorganLevine with the artifact.")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    ap = argparse.ArgumentParser(description="Turn 01 — cross-clock disagreement baseline.")
+    ap.add_argument("--demo", action="store_true",
+                    help="run end-to-end on a deterministic synthetic panel (no data needed)")
+    raise SystemExit(main(demo=ap.parse_args().demo))

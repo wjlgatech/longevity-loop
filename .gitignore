@@ -9,3 +9,6 @@ site/data.json
 .agents/
 .claude/
 skills-lock.json
+
+# turn run artifacts
+turns/**/results.json
