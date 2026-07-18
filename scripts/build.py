@@ -34,6 +34,7 @@ def render_readme() -> str:
     turns, frontier, reflections = load("turns"), load("frontier"), load("reflections")
     execs = load("executions")
     nulls = load("nulls")
+    datasets = load("datasets")
     slug = f"{meta['repo_owner']}/{meta['repo_name']}"
     L: list[str] = []
 
@@ -131,6 +132,16 @@ def render_readme() -> str:
             L.append(f"- **[{esc(n['name'])}]({n['url']})** — _{esc(n.get('verdict',''))}_ "
                      f"({esc(n.get('year',''))}): {esc(n.get('lesson',''))}")
         L += ["", "---", ""]
+
+    # Reproducibility / FAIR (pointer; full scorecard in docs/FAIR.md)
+    if datasets:
+        openn = sum(1 for d in datasets if d.get("access") == "open")
+        L += ['<h2 id="fair">♻️ Reproducibility (FAIR data)</h2>', "",
+              f"**{len(datasets)} open aging datasets** scored against FAIR (Findable · Accessible · "
+              f"Interoperable · Reusable) — {openn} openly accessible. The field lacks shared FAIR/"
+              "metadata standards for multi-omic aging data (gaps-analysis.md G2), so each dataset "
+              "carries a datasheet + an honest self-assessment (unknown ⇒ no). Full scorecard with "
+              "load recipes: **[docs/FAIR.md](docs/FAIR.md)**.", "", "---", ""]
 
     # Landscape
     L += ['<h2 id="people">🧠 Researchers</h2>', "",
