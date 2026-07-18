@@ -103,3 +103,14 @@
   done: false
   eval: { metric: "accelerator / pre-seed capital", before: "$0", after: "pending" }
   proof: "-"
+
+# ── GAPS-BRIDGE (autonomous run 2026-07-17; research → gaps-analysis.md → tooling) ──
+- id: E17
+  phase: "P1 · Foundation"
+  item: "Bridge gaps-analysis G1 (measurement): a standardized, reproducible cross-clock disagreement benchmark"
+  done: true
+  eval:
+    metric: "a shared, reproducible way to quantify how much a clock panel disagrees"
+    before: "none — clocks contradict each other, no consensus metric (triangulated across all 3 research windows)"
+    after: "clockbench.py — deterministic Spearman-agreement benchmark + CI selftest; demo panel headline 0.315, outlier auto-detected; real-data seam via --input"
+  proof: "scripts/clockbench.py · data/_clockbench.md · docs/gaps-analysis.md · make check"

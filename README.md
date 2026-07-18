@@ -153,7 +153,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 
 <h2 id="execution">✅ Roadmap Execution</h2>
 
-**5/16 done (31%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
+**6/17 done (35%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
 
 - [x] **E1** (P1 · Foundation) — Stand up the AI-native loop (repo + self-audit + gated `make check`)
 - [x] **E2** (P1 · Foundation) — Map the field into a verified knowledge base
@@ -171,6 +171,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - [ ] **E14** (P4 · Wet-lab bridge) — First real wet-lab validation (or clean null) of a computational hypothesis, run with the partner lab
 - [ ] **E15** (P4 · Spin-out) — Incorporate the entity + recruit a wet-lab co-founder from the network
 - [ ] **E16** (P4 · Spin-out) — age1 acceptance OR a pre-seed raise underway (dilutive, full-time)
+- [x] **E17** (P1 · Foundation) — Bridge gaps-analysis G1 (measurement): a standardized, reproducible cross-clock disagreement benchmark
 
 ### Eval reports — before → after
 
@@ -192,6 +193,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 | ⬜ E14 | dry→wet validated (or null) findings | 0 | pending |
 | ⬜ E15 | incorporated entity + wet-lab co-founder | none | pending |
 | ⬜ E16 | accelerator / pre-seed capital | $0 | pending |
+| ✅ E17 | a shared, reproducible way to quantify how much a clock panel disagrees | none — clocks contradict each other, no consensus metric (triangulated across all 3 research windows) | clockbench.py — deterministic Spearman-agreement benchmark + CI selftest; demo panel headline 0.315, outlier auto-detected; real-data seam via --input |
 
 ---
 

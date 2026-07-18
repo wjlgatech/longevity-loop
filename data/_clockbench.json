@@ -1,0 +1,64 @@
+{
+  "n_samples": 40,
+  "n_clocks": 4,
+  "clocks": [
+    "ClockA",
+    "ClockB",
+    "ClockC",
+    "OutlierClock"
+  ],
+  "headline_mean_agreement": 0.3151,
+  "pairwise": {
+    "ClockA~ClockB": 0.9989,
+    "ClockA~ClockC": 0.975,
+    "ClockA~OutlierClock": -0.348,
+    "ClockB~ClockC": 0.966,
+    "ClockB~OutlierClock": -0.3443,
+    "ClockC~OutlierClock": -0.357
+  },
+  "per_clock_consensus": {
+    "ClockA": 0.542,
+    "ClockB": 0.5402,
+    "ClockC": 0.528,
+    "OutlierClock": -0.3498
+  },
+  "outlier_clock": "OutlierClock",
+  "median_sample_cv": 0.1077,
+  "worst_dispersion": [
+    {
+      "sample": 3,
+      "mean": 44.14,
+      "stdev": 17.4,
+      "cv": 0.3942,
+      "range": 43.05
+    },
+    {
+      "sample": 6,
+      "mean": 45.9,
+      "stdev": 15.52,
+      "cv": 0.3381,
+      "range": 38.2
+    },
+    {
+      "sample": 1,
+      "mean": 40.84,
+      "stdev": 15.92,
+      "cv": 0.3898,
+      "range": 38.15
+    },
+    {
+      "sample": 9,
+      "mean": 47.66,
+      "stdev": 13.63,
+      "cv": 0.2861,
+      "range": 33.35
+    },
+    {
+      "sample": 4,
+      "mean": 42.6,
+      "stdev": 14.05,
+      "cv": 0.3298,
+      "range": 33.3
+    }
+  ]
+}
