@@ -40,8 +40,16 @@ reproduction) via a bio-FM. If it's a null, that's itself a finding worth sharin
 ## Run it
 ```bash
 cd turns/turn-01-biolearn-baseline
+python baseline.py --demo     # runs NOW on a deterministic synthetic panel — proves the harness
+                              # (real Δ across 5 seeds); NOT a scientific result
+
+# the real run (E6) — needs the challenge data:
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python baseline.py            # prints the Δ (heterogeneity lift) across seeds; writes results.json
+# wire load_challenge() + clock_panel() (Biolearn), then:
+python baseline.py            # prints the real Δ across seeds; writes results.json
 # then fill PROOF.md with the real numbers (including a null if that's what you got)
 ```
+The `--demo` path shares the cross-clock disagreement quantity that
+[`scripts/clockbench.py`](../../scripts/clockbench.py) standardizes (gaps-analysis G1),
+so the harness is proven correct before you spend real compute.
