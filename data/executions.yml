@@ -114,3 +114,12 @@
     before: "none — clocks contradict each other, no consensus metric (triangulated across all 3 research windows)"
     after: "clockbench.py — deterministic Spearman-agreement benchmark + CI selftest; demo panel headline 0.315, outlier auto-detected; real-data seam via --input"
   proof: "scripts/clockbench.py · data/_clockbench.md · docs/gaps-analysis.md · make check"
+- id: E18
+  phase: "P1 · Foundation"
+  item: "Bridge gaps-analysis G4 (hype outruns evidence): an open honest-nulls registry"
+  done: true
+  eval:
+    metric: "a shared, cited registry of longevity nulls/failures (so the field stops re-learning them)"
+    before: "none — graveyards recur every window (resveratrol, NAD, young blood, monkey glands) but are unrecorded"
+    after: "data/nulls.yml (6 cited entries) → generated docs/NULLS.md + README section, schema-gated in validate.py"
+  proof: "data/nulls.yml · docs/NULLS.md · scripts/build.py · make check"

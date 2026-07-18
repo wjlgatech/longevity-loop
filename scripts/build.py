@@ -15,6 +15,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 README = ROOT / "README.md"
 ROADMAP = ROOT / "docs" / "ROADMAP.md"
+NULLS = ROOT / "docs" / "NULLS.md"
 BADGE = "https://img.shields.io/github"
 
 
@@ -32,6 +33,7 @@ def render_readme() -> str:
     people, startups, stack, eco = load("people"), load("startups"), load("stack"), load("ecosystem")
     turns, frontier, reflections = load("turns"), load("frontier"), load("reflections")
     execs = load("executions")
+    nulls = load("nulls")
     slug = f"{meta['repo_owner']}/{meta['repo_name']}"
     L: list[str] = []
 
@@ -118,6 +120,18 @@ def render_readme() -> str:
             L.append(f"| {mark}{esc(e['id'])} | {esc(ev.get('metric','—'))} | {esc(ev.get('before','—'))} | {esc(ev.get('after','—'))} |")
         L += ["", "---", ""]
 
+    # Honest-nulls registry (pointer; full list in docs/NULLS.md)
+    if nulls:
+        L += ['<h2 id="nulls">🪦 Honest Nulls</h2>', "",
+              f"**{len(nulls)} logged.** Longevity claims that failed, were refuted, or returned a clean "
+              "null — recorded so the field (and this loop) stops re-learning the same failures. "
+              "No evidence ⇒ no claim applies to *negatives* too. Full registry with sources: "
+              "**[docs/NULLS.md](docs/NULLS.md)**.", ""]
+        for n in nulls[:4]:
+            L.append(f"- **[{esc(n['name'])}]({n['url']})** — _{esc(n.get('verdict',''))}_ "
+                     f"({esc(n.get('year',''))}): {esc(n.get('lesson',''))}")
+        L += ["", "---", ""]
+
     # Landscape
     L += ['<h2 id="people">🧠 Researchers</h2>', "",
           "🤖 = AI-forward · 💬 = active in the open community (good first contacts).", ""]
@@ -167,19 +181,43 @@ def render_roadmap() -> str:
     return "\n".join(L)
 
 
+def render_nulls() -> str:
+    nulls = load("nulls")
+    icon = {"refuted": "❌", "failed": "🛑", "null": "⚪", "unproven": "🟡"}
+    L = ["# longevity-loop — Honest Nulls Registry", "",
+         "_Generated from `data/nulls.yml` by `scripts/build.py` — do not edit by hand._", "",
+         "Longevity interventions and claims that **failed, were refuted, or returned a clean null.** "
+         "The field has no shared registry of honest negatives (gaps-analysis.md G4), so each "
+         "generation re-learns the same failures — from Voronoff's monkey glands to resveratrol to "
+         "young blood. Recording them is high-trust signal and the `no evidence ⇒ no claim` "
+         "discipline applied to negatives.", "",
+         "> Not medical advice. Each entry cites a public source; verdicts describe the *evidence*, "
+         "not a final word on a mechanism.", "",
+         "| Claim | Verdict | Class | Era | What happened | Lesson |",
+         "|---|:--|---|---|---|---|"]
+    for n in nulls:
+        v = f"{icon.get(n.get('verdict',''),'')} {esc(n.get('verdict',''))}"
+        L.append(f"| [{esc(n['name'])}]({n['url']}) | {v} | {esc(n.get('class',''))} | "
+                 f"{esc(n.get('year',''))} | {esc(n.get('what_happened',''))} | {esc(n.get('lesson',''))} |")
+    L += ["", "---", "",
+          "PR an entry to `data/nulls.yml` (needs a real source). A clean, well-documented null is a "
+          "contribution, not a failure.", ""]
+    return "\n".join(L)
+
+
 def main() -> int:
-    outputs = {README: render_readme(), ROADMAP: render_roadmap()}
+    outputs = {README: render_readme(), ROADMAP: render_roadmap(), NULLS: render_nulls()}
     if "--check" in sys.argv:
         stale = [p.name for p, txt in outputs.items() if (p.read_text() if p.exists() else "") != txt]
         if stale:
             print(f"Out of date: {', '.join(stale)}. Run `make build`.", file=sys.stderr)
             return 1
-        print("README.md + docs/ROADMAP.md are up to date.")
+        print("Generated docs are up to date: " + ", ".join(p.name for p in outputs))
         return 0
     for p, txt in outputs.items():
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(txt)
-    print(f"Wrote {README.name} + docs/{ROADMAP.name}.")
+    print("Wrote " + ", ".join(p.name for p in outputs) + ".")
     return 0
 
 

@@ -153,7 +153,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 
 <h2 id="execution">✅ Roadmap Execution</h2>
 
-**6/17 done (35%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
+**7/18 done (39%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
 
 - [x] **E1** (P1 · Foundation) — Stand up the AI-native loop (repo + self-audit + gated `make check`)
 - [x] **E2** (P1 · Foundation) — Map the field into a verified knowledge base
@@ -172,6 +172,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - [ ] **E15** (P4 · Spin-out) — Incorporate the entity + recruit a wet-lab co-founder from the network
 - [ ] **E16** (P4 · Spin-out) — age1 acceptance OR a pre-seed raise underway (dilutive, full-time)
 - [x] **E17** (P1 · Foundation) — Bridge gaps-analysis G1 (measurement): a standardized, reproducible cross-clock disagreement benchmark
+- [x] **E18** (P1 · Foundation) — Bridge gaps-analysis G4 (hype outruns evidence): an open honest-nulls registry
 
 ### Eval reports — before → after
 
@@ -194,6 +195,18 @@ Sequenced bridge: convert the computational finding + your credential network (G
 | ⬜ E15 | incorporated entity + wet-lab co-founder | none | pending |
 | ⬜ E16 | accelerator / pre-seed capital | $0 | pending |
 | ✅ E17 | a shared, reproducible way to quantify how much a clock panel disagrees | none — clocks contradict each other, no consensus metric (triangulated across all 3 research windows) | clockbench.py — deterministic Spearman-agreement benchmark + CI selftest; demo panel headline 0.315, outlier auto-detected; real-data seam via --input |
+| ✅ E18 | a shared, cited registry of longevity nulls/failures (so the field stops re-learning them) | none — graveyards recur every window (resveratrol, NAD, young blood, monkey glands) but are unrecorded | data/nulls.yml (6 cited entries) → generated docs/NULLS.md + README section, schema-gated in validate.py |
+
+---
+
+<h2 id="nulls">🪦 Honest Nulls</h2>
+
+**6 logged.** Longevity claims that failed, were refuted, or returned a clean null — recorded so the field (and this loop) stops re-learning the same failures. No evidence ⇒ no claim applies to *negatives* too. Full registry with sources: **[docs/NULLS.md](docs/NULLS.md)**.
+
+- **[Resveratrol / sirtuin-activating compounds (Sirtris SRT501)](https://www.science.org/content/blog-post/gsk-sirtris-wrap-up)** — _refuted_ (2010–2013): In-vitro activation ≠ in-vivo benefit — watch for assay-artifact confounds before scaling.
+- **[Antioxidant supplements for longevity (free-radical theory)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4678534/)** — _refuted_ (2007–2015): A compelling mechanism (oxidative damage) does not survive controlled outcome trials.
+- **[Young-blood plasma transfusion (Ambrosia)](https://www.nbcnews.com/health/aging/young-blood-company-ambrosia-halts-patient-treatments-after-fda-warning-n973266)** — _failed_ (2019): Striking mouse parabiosis data + paid 'trials' are not human evidence — regulators intervened.
+- **[NAD+ boosters (NMN / NR) for human longevity](https://www.gethealthspan.com/research/article/nad-boosters)** — _unproven_ (2016–2025): A moved biomarker (NAD+ up) is not a hard outcome — the exact biomarker-vs-endpoint gap (G3).
 
 ---
 
