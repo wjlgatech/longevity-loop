@@ -4,6 +4,14 @@
   <link>https://wjlgatech.github.io/longevity-loop/writings/</link>
   <description>Build-in-public daily recaps for an AI x longevity research loop.</description>
   <item>
+    <title>Bolting Teeth Onto the Flywheel</title>
+    <link>https://wjlgatech.github.io/longevity-loop/writings/2026-07-18.html</link>
+    <guid isPermaLink="true">https://wjlgatech.github.io/longevity-loop/writings/2026-07-18.html</guid>
+    <category>longevity-loop</category>
+    <pubDate>2026-07-18</pubDate>
+    <description>Today was scaffolding, and I&#x27;ll say so plainly: a runnable end-to-end demo that verifies the harness (the real run is still queued at E6), a FAIR scorecard for open aging datasets, an honest-nulls registry, and a reproducible benchmark for cross-clock disagreement. Plus a 3-window gap analysis and an ROI ledger to decide what&#x27;s worth building next. The insight: aging clocks disagreeing is a measurable feature, not a footnote — and recording failures is infrastructure, not confession.</description>
+  </item>
+<item>
     <title>A Day the Flywheel Coasted</title>
     <link>https://wjlgatech.github.io/longevity-loop/writings/2026-07-17.html</link>
     <guid isPermaLink="true">https://wjlgatech.github.io/longevity-loop/writings/2026-07-17.html</guid>
