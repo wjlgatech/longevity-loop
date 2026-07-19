@@ -143,6 +143,15 @@ def render_readme() -> str:
               "carries a datasheet + an honest self-assessment (unknown ⇒ no). Full scorecard with "
               "load recipes: **[docs/FAIR.md](docs/FAIR.md)**.", "", "---", ""]
 
+    # The hub (static pointer to the repo-recipe index + architecture)
+    L += ['<h2 id="hub">🧩 Knowledge · Tooling · Experts hub</h2>', "",
+          "This repo is a **hub**: for each cited repo it offers a knowledge graph (knowledge) + "
+          "agentic tooling (skills/plugins/workflows), and links them to the experts who build them. "
+          "Design (high-quality · fast · cheap · fresh · future-proof): "
+          "**[docs/HUB_ARCHITECTURE.md](docs/HUB_ARCHITECTURE.md)** · per-repo generation recipes: "
+          "**[docs/REPOS.md](docs/REPOS.md)**. Fresh index, just-in-time depth — deep artifacts are "
+          "generated on demand and cached by commit SHA, never committed stale.", "", "---", ""]
+
     # What we're shooting (static pointer to the problem map)
     L += ['<h2 id="target">🎯 What we\'re shooting</h2>', "",
           "The top aging problems, how they relate, the **one root bottleneck we target** "
