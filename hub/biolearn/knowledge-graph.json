@@ -1,0 +1,52 @@
+{
+  "schema": "longevity-loop hub knowledge graph — portable nodes/edges JSON",
+  "source": {
+    "repo": "bio-learn/biolearn",
+    "url": "https://github.com/bio-learn/biolearn",
+    "sha": "0d714f5a0c0a",
+    "grounded_in": "bio-learn.github.io quickstart + auto_examples index (documented API + real example titles)"
+  },
+  "nodes": [
+    {"id": "repo:biolearn", "label": "biolearn", "type": "repo", "note": "standardized aging-biomarker platform; powers the Biomarkers-of-Aging Challenge"},
+    {"id": "mod:data_library", "label": "biolearn.data_library", "type": "module"},
+    {"id": "mod:model_gallery", "label": "biolearn.model_gallery", "type": "module"},
+    {"id": "cls:DataLibrary", "label": "DataLibrary", "type": "class", "note": ".get(id).load() -> GeoData"},
+    {"id": "cls:GeoData", "label": "GeoData", "type": "class", "note": "attributes: .dnam (methylation matrix), .metadata (age, outcomes)"},
+    {"id": "cls:ModelGallery", "label": "ModelGallery", "type": "class", "note": ".get(clock).predict(dnam)"},
+    {"id": "fn:load", "label": "DataLibrary.get().load()", "type": "function"},
+    {"id": "fn:predict", "label": "ModelGallery.get().predict()", "type": "function"},
+    {"id": "concept:clock", "label": "aging clock", "type": "concept"},
+    {"id": "clock:Horvath", "label": "Horvath", "type": "clock"},
+    {"id": "clock:DunedinPACE", "label": "DunedinPACE", "type": "clock"},
+    {"id": "data:geo", "label": "GEO", "type": "data-source"},
+    {"id": "data:nhanes", "label": "NHANES", "type": "data-source"},
+    {"id": "data:framingham", "label": "Framingham", "type": "data-source"},
+    {"id": "ex:challenge", "label": "example: Exploring the Challenge Data", "type": "example", "note": "auto_examples/02_challenge_submissions/"},
+    {"id": "ex:submission", "label": "example: Building a competition submission", "type": "example"},
+    {"id": "ext:leaderboard", "label": "Biomarkers of Aging Challenge (leaderboard)", "type": "downstream"},
+    {"id": "ext:turn01", "label": "longevity-loop Turn 01 (E6)", "type": "downstream"},
+    {"id": "ext:clockbench", "label": "longevity-loop clockbench (G1)", "type": "downstream"}
+  ],
+  "edges": [
+    {"source": "repo:biolearn", "target": "mod:data_library", "rel": "contains"},
+    {"source": "repo:biolearn", "target": "mod:model_gallery", "rel": "contains"},
+    {"source": "mod:data_library", "target": "cls:DataLibrary", "rel": "defines"},
+    {"source": "mod:data_library", "target": "cls:GeoData", "rel": "defines"},
+    {"source": "mod:model_gallery", "target": "cls:ModelGallery", "rel": "defines"},
+    {"source": "cls:DataLibrary", "target": "fn:load", "rel": "has"},
+    {"source": "fn:load", "target": "cls:GeoData", "rel": "produces"},
+    {"source": "cls:ModelGallery", "target": "fn:predict", "rel": "has"},
+    {"source": "fn:predict", "target": "concept:clock", "rel": "runs"},
+    {"source": "clock:Horvath", "target": "concept:clock", "rel": "is-a"},
+    {"source": "clock:DunedinPACE", "target": "concept:clock", "rel": "is-a"},
+    {"source": "cls:DataLibrary", "target": "data:geo", "rel": "loads-from"},
+    {"source": "cls:DataLibrary", "target": "data:nhanes", "rel": "loads-from"},
+    {"source": "cls:DataLibrary", "target": "data:framingham", "rel": "loads-from"},
+    {"source": "ex:challenge", "target": "ext:turn01", "rel": "enables"},
+    {"source": "ex:submission", "target": "ext:leaderboard", "rel": "enables"},
+    {"source": "repo:biolearn", "target": "ext:leaderboard", "rel": "powers"},
+    {"source": "fn:predict", "target": "ext:clockbench", "rel": "feeds"},
+    {"source": "cls:GeoData", "target": "ext:turn01", "rel": "consumed-by"}
+  ],
+  "counts": {"nodes": 19, "edges": 19}
+}

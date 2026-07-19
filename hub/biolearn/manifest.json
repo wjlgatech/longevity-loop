@@ -1,0 +1,15 @@
+{
+  "repo": "bio-learn/biolearn",
+  "url": "https://github.com/bio-learn/biolearn",
+  "source_sha": "0d714f5a0c0a",
+  "generated_at": "2026-07-19",
+  "license_note": "not verified this run — confirm at the repo before redistribution",
+  "one_line": "Open, standardized platform for aging biomarkers — dataset loaders + a model gallery of clocks; the Biomarkers-of-Aging Challenge leaderboard runs on it.",
+  "artifacts": ["knowledge-graph.json", "SKILL.md"],
+  "engines": {
+    "knowledge_graph": "grounded from bio-learn.github.io quickstart + example index (production: graphify / understand-anything)",
+    "skill": "grounded from Biolearn's documented API + example titles (production: anyagent reverse -> refine)"
+  },
+  "provenance_note": "Grounded in bio-learn.github.io docs + example titles at source_sha; exact dataset IDs / args are deferred to the cited example files rather than invented (no evidence => no claim). Regenerate when source_sha changes (scripts/hub_gen.py --refresh).",
+  "why": "Biolearn IS the North Star — the leaderboard + the challenge-data/clock loader that E6 (run Turn 01) and E7 (first leaderboard submission) directly depend on. Highest-value toolset in the hub."
+}

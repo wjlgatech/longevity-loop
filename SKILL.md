@@ -22,10 +22,11 @@ The loop's discipline governs every action: **no evidence ⇒ no claim** · comp
 
 ## Progressive disclosure — per-repo toolsets (load on trigger)
 
-**1 toolset(s)** generated from cited repos (the hub — see `docs/HUB_ARCHITECTURE.md`). Load a toolset's `SKILL.md` **only when its trigger matches** — don't carry them all. Each is grounded in its source repo at a pinned commit SHA (freshness: `make hub` / `python3 scripts/hub_gen.py --refresh`).
+**2 toolset(s)** generated from cited repos (the hub — see `docs/HUB_ARCHITECTURE.md`). Load a toolset's `SKILL.md` **only when its trigger matches** — don't carry them all. Each is grounded in its source repo at a pinned commit SHA (freshness: `make hub` / `python3 scripts/hub_gen.py --refresh`).
 
 | Toolset | Load when (trigger) | Read | Source @ SHA |
 |---|---|---|---|
+| `biolearn-leaderboard` | Load the Biomarkers-of-Aging Challenge data, compute a panel of aging clocks, and build a leaderboard submission with Biolearn. Trigger for running Turn 01 on real data (E6), the first leaderboard submission (E7), or any standardized aging-biomarker load/score task. | `hub/biolearn/SKILL.md` | bio-learn/biolearn @ `0d714f5a0c0a` |
 | `compute-aging-clocks` | Compute a panel of biological-age (epigenetic) clocks from methylation/omics data with pyaging, then hand the panel to clockbench to quantify cross-clock disagreement. Trigger when you need biological-age estimates, a clock panel, or the disagreement signal for the Biomarkers-of-Aging / Turn-01 work. | `hub/pyaging/SKILL.md` | rsinghlab/pyaging @ `c2b3000e3c2c` |
 
 ## Reaching a toolset that doesn't exist yet (just-in-time)
