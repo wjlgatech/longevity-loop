@@ -143,6 +143,14 @@ def render_readme() -> str:
               "carries a datasheet + an honest self-assessment (unknown ⇒ no). Full scorecard with "
               "load recipes: **[docs/FAIR.md](docs/FAIR.md)**.", "", "---", ""]
 
+    # What we're shooting (static pointer to the problem map)
+    L += ['<h2 id="target">🎯 What we\'re shooting</h2>', "",
+          "The top aging problems, how they relate, the **one root bottleneck we target** "
+          "(G1 — measuring aging), and the **low-hanging fruit** for quick wins — as a graph: "
+          "**[docs/PROBLEMS.md](docs/PROBLEMS.md)**. Root bottleneck = our lane; everything "
+          "downstream is gated on being able to measure aging in a shared, validated way.", "",
+          "---", ""]
+
     # Landscape
     L += ['<h2 id="people">🧠 Researchers</h2>', "",
           "🤖 = AI-forward · 💬 = active in the open community (good first contacts).", ""]

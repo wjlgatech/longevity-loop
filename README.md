@@ -157,7 +157,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 
 <h2 id="execution">✅ Roadmap Execution</h2>
 
-**9/20 done (45%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
+**10/21 done (48%).** Each execution is a checkbox with a before→after eval; a box only ticks with a real result (`done` requires a non-pending before AND after — no evidence ⇒ not done, gated in CI).
 
 - [x] **E1** (P1 · Foundation) — Stand up the AI-native loop (repo + self-audit + gated `make check`)
 - [x] **E2** (P1 · Foundation) — Map the field into a verified knowledge base
@@ -179,6 +179,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 - [x] **E18** (P1 · Foundation) — Bridge gaps-analysis G4 (hype outruns evidence): an open honest-nulls registry
 - [x] **E19** (P1 · Foundation) — Bridge gaps-analysis G2 (reproducibility / FAIR): a datasheet + FAIR scorecard for open aging datasets
 - [x] **E20** (P1 · Foundation) — Learn from mims-harvard/ATHENA; integrate the frontier signal into the field map
+- [x] **E21** (P1 · Foundation) — Problem map: top aging problems as a relationship graph + the one target + low-hanging fruit
 
 ### Eval reports — before → after
 
@@ -204,6 +205,7 @@ Sequenced bridge: convert the computational finding + your credential network (G
 | ✅ E18 | a shared, cited registry of longevity nulls/failures (so the field stops re-learning them) | none — graveyards recur every window (resveratrol, NAD, young blood, monkey glands) but are unrecorded | data/nulls.yml (6 cited entries) → generated docs/NULLS.md + README section, schema-gated in validate.py |
 | ✅ E19 | FAIR/reproducibility scored + gated for the open aging datasets the loop uses | none — no FAIR/metadata standard; datasets picked ad hoc, reproducibility implicit | data/datasets.yml (7 datasets) → scripts/fair.py → docs/FAIR.md scorecard; panel 86/100; gate fails on any unassessed dim; CI-wired |
 | ✅ E20 | external frontier work studied → integrated (cited) into the loop | ATHENA / ToolUniverse / Zitnik not tracked; no study on file | research/athena-study.md (cited analysis) + Zitnik (people), ATHENA-R1 (frontier), ToolUniverse (stack) added; finding: ATHENA's citation-allow-list = our existing no-evidence-no-claim; RAG/multi-agent/ToolUniverse overkill for a solo code-only loop |
+| ✅ E21 | a clear, visual answer to 'what are we shooting, and what's the quick win' | gaps ranked (gaps-analysis.md) but relationships + the single target + quick wins were implicit | docs/PROBLEMS.md — Mermaid relationship graph (G1 measurement = root bottleneck we target) + top-problems table + how/when/why + 3 low-hanging fruit with done-when; README pointer |
 
 ---
 
@@ -221,6 +223,12 @@ Sequenced bridge: convert the computational finding + your credential network (G
 <h2 id="fair">♻️ Reproducibility (FAIR data)</h2>
 
 **7 open aging datasets** scored against FAIR (Findable · Accessible · Interoperable · Reusable) — 6 openly accessible. The field lacks shared FAIR/metadata standards for multi-omic aging data (gaps-analysis.md G2), so each dataset carries a datasheet + an honest self-assessment (unknown ⇒ no). Full scorecard with load recipes: **[docs/FAIR.md](docs/FAIR.md)**.
+
+---
+
+<h2 id="target">🎯 What we're shooting</h2>
+
+The top aging problems, how they relate, the **one root bottleneck we target** (G1 — measuring aging), and the **low-hanging fruit** for quick wins — as a graph: **[docs/PROBLEMS.md](docs/PROBLEMS.md)**. Root bottleneck = our lane; everything downstream is gated on being able to measure aging in a shared, validated way.
 
 ---
 

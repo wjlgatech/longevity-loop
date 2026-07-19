@@ -141,3 +141,12 @@
     before: "ATHENA / ToolUniverse / Zitnik not tracked; no study on file"
     after: "research/athena-study.md (cited analysis) + Zitnik (people), ATHENA-R1 (frontier), ToolUniverse (stack) added; finding: ATHENA's citation-allow-list = our existing no-evidence-no-claim; RAG/multi-agent/ToolUniverse overkill for a solo code-only loop"
   proof: "research/athena-study.md · data/{people,frontier,stack}.yml · make check"
+- id: E21
+  phase: "P1 · Foundation"
+  item: "Problem map: top aging problems as a relationship graph + the one target + low-hanging fruit"
+  done: true
+  eval:
+    metric: "a clear, visual answer to 'what are we shooting, and what's the quick win'"
+    before: "gaps ranked (gaps-analysis.md) but relationships + the single target + quick wins were implicit"
+    after: "docs/PROBLEMS.md — Mermaid relationship graph (G1 measurement = root bottleneck we target) + top-problems table + how/when/why + 3 low-hanging fruit with done-when; README pointer"
+  proof: "docs/PROBLEMS.md · scripts/build.py (README pointer) · make check"
