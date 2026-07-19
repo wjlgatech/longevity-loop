@@ -150,7 +150,9 @@ def render_readme() -> str:
           "Design (high-quality · fast · cheap · fresh · future-proof): "
           "**[docs/HUB_ARCHITECTURE.md](docs/HUB_ARCHITECTURE.md)** · per-repo generation recipes: "
           "**[docs/REPOS.md](docs/REPOS.md)**. Fresh index, just-in-time depth — deep artifacts are "
-          "generated on demand and cached by commit SHA, never committed stale.", "", "---", ""]
+          "generated on demand and cached by commit SHA, never committed stale. First deep exemplar "
+          "(Phase 2): **[hub/pyaging](hub/pyaging)** — a grounded knowledge graph + a gated skill, "
+          "SHA-stamped, with a live staleness check (`make hub` / `scripts/hub_gen.py --refresh`).", "", "---", ""]
 
     # What we're shooting (static pointer to the problem map)
     L += ['<h2 id="target">🎯 What we\'re shooting</h2>', "",

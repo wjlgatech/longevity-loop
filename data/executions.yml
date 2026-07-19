@@ -168,3 +168,12 @@
     before: "cited repos listed in stack.yml but no KG/tooling per repo; no design for how to do it well"
     after: "docs/HUB_ARCHITECTURE.md (index+JIT design; reuse graphify/understand/reverse; MCP; SHA-cached) + scripts/repos.py → docs/REPOS.md (22 repos, per-repo KG + reverse recipes), gated in make check"
   proof: "docs/HUB_ARCHITECTURE.md · scripts/repos.py · docs/REPOS.md · make check"
+- id: E24
+  phase: "P1 · Foundation"
+  item: "Hub Phase-2: JIT deep artifacts for one repo (pyaging) — knowledge graph + gated skill, SHA-stamped"
+  done: true
+  eval:
+    metric: "a real, grounded, provenance-stamped KG + skill generated from a cited repo, with a freshness gate"
+    before: "hub had the recipe layer only; no deep artifact proving the JIT layer works"
+    after: "hub/pyaging/ — knowledge-graph.json (20 nodes/edges) + compute-aging-clocks SKILL.md + manifest (SHA c2b3000e3c2c); scripts/hub_gen.py gates integrity (make check) + checks live staleness (FRESH); grounded in pyaging's real API"
+  proof: "hub/pyaging/* · scripts/hub_gen.py · docs/HUB_ARCHITECTURE.md"

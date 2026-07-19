@@ -1,0 +1,16 @@
+{
+  "repo": "rsinghlab/pyaging",
+  "url": "https://github.com/rsinghlab/pyaging",
+  "source_sha": "c2b3000e3c2c",
+  "generated_at": "2026-07-19",
+  "license": "BSD-3-Clause",
+  "stars_at_generation": 127,
+  "one_line": "A Python compendium of GPU-optimized biological aging clocks (170+ published clocks).",
+  "artifacts": ["knowledge-graph.json", "SKILL.md"],
+  "engines": {
+    "knowledge_graph": "grounded from the pyaging repo + readthedocs (production: graphify / understand-anything)",
+    "skill": "grounded from the pyaging real API (production: anyagent reverse -> refine)"
+  },
+  "provenance_note": "Every fact is grounded in the pyaging repo/docs at source_sha. This is the Phase-2 exemplar of the JIT deep layer (docs/HUB_ARCHITECTURE.md): regenerate when source_sha changes — `scripts/hub_gen.py --refresh` flags staleness. No evidence => no claim.",
+  "why": "pyaging computes the epigenetic-clock panel that feeds scripts/clockbench.py (gaps-analysis G1) and Turn 01 — the loop's #1 measurement target."
+}
