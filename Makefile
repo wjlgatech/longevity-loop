@@ -1,4 +1,4 @@
-.PHONY: build validate audit eval site graph track synthesize recap-dry clockbench fair repos hub check help
+.PHONY: build validate audit eval site graph track synthesize recap-dry clockbench fair repos hub skill check help
 
 help:
 	@echo "longevity-loop — an AI-native compounding loop for aging science"
@@ -11,7 +11,8 @@ help:
 	@echo "  make fair        Score open aging datasets for FAIR/reproducibility → docs/FAIR.md (G2)"
 	@echo "  make repos       Per-repo KG + agentic-tooling generation recipes → docs/REPOS.md (hub)"
 	@echo "  make hub         Validate the JIT deep artifacts under hub/ (add --refresh for staleness)"
-	@echo "  make check       validate + audit + eval + clockbench + fair + repos + hub + build drift-gate (CI finish line)"
+	@echo "  make skill       Regenerate the /longevity-loop SKILL.md (backbone + hub toolset disclosure)"
+	@echo "  make check       validate + audit + eval + clockbench + fair + repos + hub + skill + build drift-gate (CI finish line)"
 
 build:
 	python3 scripts/build.py
@@ -65,8 +66,12 @@ repos:
 hub:
 	python3 scripts/hub_gen.py --check
 
+# Regenerate the invocable /longevity-loop skill (backbone tools + hub toolset disclosure).
+skill:
+	python3 scripts/skill_gen.py
+
 # Finish line: data well-formed, still an AI-native loop, executions honestly eval'd (no fake ✅),
-# the clock-disagreement + FAIR + repo-recipe + hub artifacts self-verify, and docs match.
+# the clock-disagreement + FAIR + repo-recipe + hub + skill artifacts self-verify, and docs match.
 check: validate audit eval
 	python3 scripts/clockbench.py --selftest
 	python3 scripts/fair.py --selftest
@@ -76,4 +81,6 @@ check: validate audit eval
 	python3 scripts/repos.py --check
 	python3 scripts/hub_gen.py --selftest
 	python3 scripts/hub_gen.py --check
+	python3 scripts/skill_gen.py --selftest
+	python3 scripts/skill_gen.py --check
 	python3 scripts/build.py --check
