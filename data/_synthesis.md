@@ -17,18 +17,18 @@ A newer aging-relevant publication than our curated entry was found for the rese
   > There are extensive ongoing efforts to slow or even reverse human aging, such as with epigenetic cellular reprogramming, thymus rejuvenation or senolytics. In parallel, new and diverse metrics-known as biological clocks-have been discovered and shown to track the pace of aging in an individual and their organs, tissues and cells. These clocks have multiple potential use cases, including identifying people at high risk of disease, serving as a foundation for prevention or early detection, and determining whether lifestyle factors or an intervention can modulate the aging process. This review pr
 
 ### Vadim Gladyshev  · _relevance: strong_
-- **Found:** [Systemic epigenetic dysregulation as a driver of ageing and a therapeutic target](https://doi.org/10.1038/s41580-026-00958-0) — _MED, 2026_ (pub 2026-03-27)
+- **Found:** [Meta-analysis of DNA methylation aging signatures in 17 human tissues](https://doi.org/10.1038/s43587-026-01164-5) — _MED, 2026_ (pub 2026-06-26)
 - **⚠ Confirm identity:** matched on author `Gladyshev V` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** Mammalian aging involves genome-wide splicing degeneration leading to functional decline _(2026)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Although epigenetic changes during ageing are well documented, we lack an integrated framework to systematically explain their mechanistic relationships. In this Review, we present a systems-level framework that demonstrates how epigenetic regulation controls ageing. We discuss four interdependent processes through which epigenetic fidelity - the capacity of chromatin regulatory systems to maintain precise gene expression states - progressively fails: deterioration of nuclear architecture, including breakdown of lamina-associated domains; dysregulation of epigenetic memory through chromatin-mo
+  > Epigenetic changes, in particular DNA methylation, accumulate with age across different tissues, but whether these changes follow consistent patterns across different organs remains poorly understood. Here we show, through a meta-analysis of more than 15,000 human methylation profiles spanning 17 tissues, that aging produces both conserved and tissue-specific epigenetic signatures. We identify systemic shifts in methylation levels, increases in methylation variability, and growing molecular disorder across tissues. Network analysis revealed tightly connected gene clusters that are not modified
 
 ### Nir Barzilai  · _relevance: strong_
 - **Found:** [Cognitive Aging and Brain Health: A Comparison of Super Movers vs Nonsuper Movers](https://doi.org/10.1212/wnl.0000000000214776) — _MED, 2026_ (pub 2026-06-16)
 - **⚠ Confirm identity:** matched on author `Barzilai N` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > <h4>Background and objectives</h4>Super movers are individuals aged ≥80 years with gait speeds ≥1.5 SDs above age- and sex-adjusted means. Super movers tend to have lower prevalence of chronic medical conditions, healthier lifestyles, and younger biological age. The aim of this study was to examine their risk of incident cognitive impairment, trajectories of cognitive decline, and brain health.<h4>Methods</h4>This study used a retrospective study design using data from older adults aged ≥80 without Alzheimer disease or dementia enrolled in 5 Health and Retirement Study International Network of
+  > Background and objectives Super movers are individuals aged ≥80 years with gait speeds ≥1.5 SDs above age- and sex-adjusted means. Super movers tend to have lower prevalence of chronic medical conditions, healthier lifestyles, and younger biological age. The aim of this study was to examine their risk of incident cognitive impairment, trajectories of cognitive decline, and brain health. Methods This study used a retrospective study design using data from older adults aged ≥80 without Alzheimer disease or dementia enrolled in 5 Health and Retirement Study International Network of Studies (HRS-I
 
 ### David Sinclair  · _relevance: strong_
 - **Found:** [The association of frailty with age and lifespan in mice differs by strain and sex](https://doi.org/10.1093/gerona/glag167) — _MED, 2026_ (pub 2026-06-26)
@@ -36,6 +36,13 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Frailty indices have been assessed in mouse models for more than a decade, but the effect of sex and strain on frailty outcomes remains poorly understood. Here, we collated and harmonized item-level 31-item clinical frailty index (FI) and lifespan data from 17 independent cohorts, including 1,564 naturally aging mice (690 females, 874 males) across five commonly used mouse strains or substrains: C57BL/6JNIA, C57BL/6N, C57BL/6J, UM-HET3, and Diversity Outbred. A total of 3,665 observations were included across cross-sectional and longitudinal studies, some previously published, with 2,192 obser
+
+### Eric Verdin  · _relevance: strong_
+- **Found:** [Trained immunity links hematopoietic stem cell aging to aging-associated inflammation](https://doi.org/10.1038/s43587-026-01175-2) — _MED, 2026_ (pub 2026-07-16)
+- **⚠ Confirm identity:** matched on author `Verdin E` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** (not in frontier.yml yet)
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Trained immunity is a state of heightened immune response that is initiated in hematopoietic stem cells (HSCs) and mediated mainly by their myeloid progeny. Aging-associated inflammation drives many aging-related diseases, yet its biological origin is largely unknown. Here we show that SIRT3, a mitochondrial deacetylase highly expressed in HSCs but reduced during aging, suppresses the HSC response to aging that drives maladaptive trained immunity, chronic inflammation and tissue functional decline in mice. Overexpression of SIRT3 in HSCs not only ameliorates aging-associated HSC decline, but a
 
 ### Charles Brenner  · _relevance: strong_
 - **Found:** [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarcoma as a potential biomarker for NAMPT inhibition](https://doi.org/10.1158/1535-7163.mct-25-0619) — _MED, 2026_ (pub 2026-04-21)
@@ -56,7 +63,7 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **⚠ Confirm identity:** matched on author `Magalhaes JP` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** Translational toolkit for reproducible, cross-study profiling of human ageing hallmarks _(2026)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > <h4>Purpose</h4>This study investigated the relationship between muscle thickness and raw and derived bioelectrical impedance analysis (BIA) parameters following 12 wk of resistance training (RT) in older women.<h4>Methods</h4>Fifty-five older women were assigned to a control group ( n = 31) or an RT group ( n = 24). Muscle thickness was assessed using B-mode ultrasound, while BIA parameters, including reactance (Xc), resistance (R), phase angle (PhA), intracellular water, extracellular water (ECW), and total body water, were measured at 50 kHz. Total and appendicular lean soft tissue and fat 
+  > Purpose This study investigated the relationship between muscle thickness and raw and derived bioelectrical impedance analysis (BIA) parameters following 12 wk of resistance training (RT) in older women. Methods Fifty-five older women were assigned to a control group ( n = 31) or an RT group ( n = 24). Muscle thickness was assessed using B-mode ultrasound, while BIA parameters, including reactance (Xc), resistance (R), phase angle (PhA), intracellular water, extracellular water (ECW), and total body water, were measured at 50 kHz. Total and appendicular lean soft tissue and fat mass were evalu
 
 ### Alex Zhavoronkov  · _relevance: weak_
 - **Found:** [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — _MED, 2026_ (pub 2026-04-20)
@@ -91,7 +98,7 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **⚠ Confirm identity:** matched on author `Church G` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** Replacement as an aging intervention (Nature Aging Perspective) _(2025)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Biodiversity loss in the present era requires new tools for studying nonmodel organisms. Elephants are both an endangered species and excellent models for studying complex phenotypes including size, social behavior and longevity. Here we report the first derivation of elephant (Elephas maximus) induced pluripotent stem (emiPS) cells. We achieved emiPS cells using two approaches: (1) a two-step process of chemical media induction and colony selection followed by over-expression of elephant transcription factors; and (2) a one-step process with transcription factors and HRAS mutant, HRAS<sub>G12
+  > Biodiversity loss in the present era requires new tools for studying nonmodel organisms. Elephants are both an endangered species and excellent models for studying complex phenotypes including size, social behavior and longevity. Here we report the first derivation of elephant (Elephas maximus) induced pluripotent stem (emiPS) cells. We achieved emiPS cells using two approaches: (1) a two-step process of chemical media induction and colony selection followed by over-expression of elephant transcription factors; and (2) a one-step process with transcription factors and HRAS mutant, HRAS G12V . 
 
 ### Matt Kaeberlein  · _relevance: weak_
 - **Found:** [Multimorbidity as a predictor of mortality in companion dogs](https://doi.org/10.1007/s11357-026-02342-4) — _MED, 2026_ (pub 2026-06-01)
@@ -99,13 +106,6 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **We currently list:** Exercise and Weekly Sirolimus (Rapamycin) in Older Adults: RAPA-EX-01 RCT _(2026)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Multimorbidity, the presence of two or more conditions, is associated with a higher risk of death as individuals age. However, modeling multimorbidity in laboratory animals is difficult, if not impossible, because specific conditions are seldom individually diagnosed and treated in these settings. Because of their shared environment, physiology, and genetic diversity, and because they are medically managed as individuals, companion dogs have potential to serve as a translational multimorbidity model. Yet it is unknown how diagnoses accumulate over time, how these diagnoses are associated with 
-
-### Eric Verdin  · _relevance: weak_
-- **Found:** [Author Correction: Regulation of urea cycle by reversible high-stoichiometry lysine succinylation](https://doi.org/10.1038/s42255-026-01549-1) — _MED, 2026_ (pub 2026-06-01)
-- **⚠ Confirm identity:** matched on author `Verdin E` — open the link and check it is the same person before promoting (initials-match ≠ proof).
-- **We currently list:** (not in frontier.yml yet)
-- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > (no abstract returned — open the link to source a quote)
 
 ### Andrew Steele  · _relevance: weak_
 - **Found:** [Clinical Validation of the Roche cobas and cobas 4800 Human Papillomavirus Tests on Self-Collected Vaginal Dry Swabs versus Practitioner-Collected Cervical Specimens Using the VALHUDES Protocol](https://doi.org/10.1016/j.jmoldx.2026.05.009) — _MED, 2026_ (pub 2026-06-19)
@@ -121,35 +121,44 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Drug discovery and development is time-intensive, expensive and laden with risk. Identifying the right drug targets is crucial for increasing the probability of success, but traditional target identification and validation often take years, and a target is only fully validated once a drug based on it receives approval by regulatory agencies. Given its proficiency in analysing large datasets and intricate biological networks, artificial intelligence (AI) is playing an increasingly important role in drug target identification and assessment. This article reviews recent advances in target discove
 
+### Marinka Zitnik  · _relevance: weak_
+- **Found:** [Unifying the odyssey: artificial intelligence for rare disease diagnosis and therapy](https://doi.org/10.1007/s12553-026-01057-y) — _MED, 2026_ (pub 2026-03-10)
+- **⚠ Confirm identity:** matched on author `Zitnik M` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** ATHENA-R1: An AI agent for treatment reasoning over a biomedical tool universe _(2026)_
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Purpose To summarize current challenges in rare disease (RD) diagnosis and therapy, highlight recent advances in artificial intelligence (AI) for RDs, and propose a model future state for RD patient care. Methods Multidisciplinary expert-led narrative review summarizing modern practical challenges and rate-limiting steps in RD patient care, citing key clinical and research considerations with respect to regulatory and economic constraints. Results Over 10,000 known RDs collectively affect 1 in 10 Americans, a total of over 30 million people. Annually, RDs account for over $1 trillion of annual
+
 ## B) Roadmap signal
 
 Fresh works cluster on these topics — check each against `data/roadmap.yml` and decide if a phase/week should shift (attach the evidence link if you do):
 
-- **interventions** (6 fresh work(s): Alex Zhavoronkov, Charles Brenner, Joe Betts-LaCroix, Kristen Fortney, Peter Fedichev, Tony Wyss-Coray)
+- **interventions** (8 fresh work(s): Alex Zhavoronkov, Charles Brenner, Joe Betts-LaCroix, Kristen Fortney, Marinka Zitnik, Peter Fedichev, Tony Wyss-Coray, Vadim Gladyshev)
   - evidence: [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — Alex Zhavoronkov, 2026
   - evidence: [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — Peter Fedichev, 2026
   - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
+  - evidence: [Meta-analysis of DNA methylation aging signatures in 17 human tissues](https://doi.org/10.1038/s43587-026-01164-5) — Vadim Gladyshev, 2026
   - evidence: [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarco](https://doi.org/10.1158/1535-7163.mct-25-0619) — Charles Brenner, 2026
   - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
   - evidence: [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — Kristen Fortney, 2026
-- **reprogramming** (4 fresh work(s): George Church, Peter Fedichev, Tony Wyss-Coray, Vadim Gladyshev)
-  - evidence: [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — Peter Fedichev, 2026
-  - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
-  - evidence: [Systemic epigenetic dysregulation as a driver of ageing and a therapeu](https://doi.org/10.1038/s41580-026-00958-0) — Vadim Gladyshev, 2026
-  - evidence: [Derivation of elephant induced pluripotent stem cells](https://doi.org/10.1038/s41592-026-03136-4) — George Church, 2026
+  - evidence: [Unifying the odyssey: artificial intelligence for rare disease diagnos](https://doi.org/10.1007/s12553-026-01057-y) — Marinka Zitnik, 2026
 - **aging clocks** (4 fresh work(s): Charles Brenner, Nir Barzilai, Tony Wyss-Coray, Vadim Gladyshev)
   - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
-  - evidence: [Systemic epigenetic dysregulation as a driver of ageing and a therapeu](https://doi.org/10.1038/s41580-026-00958-0) — Vadim Gladyshev, 2026
+  - evidence: [Meta-analysis of DNA methylation aging signatures in 17 human tissues](https://doi.org/10.1038/s43587-026-01164-5) — Vadim Gladyshev, 2026
   - evidence: [Cognitive Aging and Brain Health: A Comparison of Super Movers vs Nons](https://doi.org/10.1212/wnl.0000000000214776) — Nir Barzilai, 2026
   - evidence: [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarco](https://doi.org/10.1158/1535-7163.mct-25-0619) — Charles Brenner, 2026
-- **AI / foundation models** (1 fresh work(s): Joe Betts-LaCroix)
+- **reprogramming** (3 fresh work(s): George Church, Peter Fedichev, Tony Wyss-Coray)
+  - evidence: [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — Peter Fedichev, 2026
+  - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
+  - evidence: [Derivation of elephant induced pluripotent stem cells](https://doi.org/10.1038/s41592-026-03136-4) — George Church, 2026
+- **hallmarks / mechanisms** (2 fresh work(s): Eric Verdin, Joe Betts-LaCroix)
+  - evidence: [Trained immunity links hematopoietic stem cell aging to aging-associat](https://doi.org/10.1038/s43587-026-01175-2) — Eric Verdin, 2026
   - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
-- **hallmarks / mechanisms** (1 fresh work(s): Joe Betts-LaCroix)
+- **AI / foundation models** (1 fresh work(s): Joe Betts-LaCroix)
   - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
 
 ## Coverage (honest ledger)
 
-- Researchers checked: **16**
-- Newer-work proposals: **16**
+- Researchers checked: **17**
+- Newer-work proposals: **17**
 - None found (searched, empty): **0**
 - Errors (not measured this run): **0**
