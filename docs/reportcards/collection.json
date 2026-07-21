@@ -1,0 +1,28 @@
+[
+  {
+    "id": "rc0001",
+    "delivery": "Completed the OpenSpace external-validation trial (E27): verified install fix + real quality records committed",
+    "objective": "Prove the loop's skills work outside this repo, with evidence not vibes (tooling credibility for E6/E7)",
+    "created_at": "2026-07-21T05:28:51Z",
+    "key_results": [
+      {
+        "text": "3/3 OpenSpace tasks SUCCESS, 2/3 judged skill-applied",
+        "target": "3 real tasks with quality records",
+        "score": 0.85,
+        "evidence": "openspace-trial/RESULTS.md"
+      },
+      {
+        "text": "RUNBOOK install corrected, editable proven broken",
+        "target": "verified reproducible install",
+        "score": 1.0,
+        "evidence": "openspace-trial/RUNBOOK.md + PR #14"
+      },
+      {
+        "text": "E27 logged + make check green",
+        "target": "ledger honest, no fake pass",
+        "score": 1.0,
+        "evidence": "16/27 executions"
+      }
+    ]
+  }
+]
