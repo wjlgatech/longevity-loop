@@ -195,3 +195,12 @@
     before: "hub had 1 exemplar (pyaging); Biolearn (the leaderboard/loader for E6/E7) had no toolset"
     after: "hub/biolearn/ — knowledge-graph.json (19 nodes/edges) + biolearn-leaderboard SKILL.md (real API, ties to E6/E7) + manifest (SHA 0d714f5a0c0a, FRESH); skill_gen auto-discovered it → SKILL.md now discloses 2 toolsets, no hand-editing"
   proof: "hub/biolearn/* · SKILL.md (2 toolsets) · make check"
+- id: E27
+  phase: "P1 · Foundation"
+  item: "External validation — register the loop's skills in HKUDS/OpenSpace, run 3 real tasks, read the quality records"
+  done: true
+  eval:
+    metric: "the loop's skills register into a third-party quality-first hub and are selected/applied on real tasks (evidence, not vibes)"
+    before: "openspace-trial/ had a runbook + inventory but no results; the loop's skills had never been exercised outside this repo; the runbook's install step (pip install -e .) was unverified"
+    after: "source-installed OpenSpace v2.0.0 (py3.12, non-editable — editable install proven broken); 3 skills registered (trusted); 3 tasks all SUCCESS/completed; biolearn-leaderboard + longevity-loop judged 'skill applied' (2/3); evolution engine correctly NOOP (plans give no executed evidence); sandbox denied bash/write (blast radius contained). Verdict: trial-more"
+  proof: "openspace-trial/RESULTS.md · RUNBOOK.md (verified install) · evidence.db + openspace.db quality records"

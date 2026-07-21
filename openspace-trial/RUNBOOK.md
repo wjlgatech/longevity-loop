@@ -9,11 +9,18 @@ regression/bloat/slowdown. Local-first; own-your-data.
 ```
 git clone https://github.com/HKUDS/OpenSpace.git && cd OpenSpace
 python3.12 -m venv .venv && . .venv/bin/activate   # Python 3.12 (3.14 may lack dep wheels)
-pip install -e .
-openspace-mcp --help                                # verify the REAL package
+pip install .                                        # NON-editable — see the gotcha below
+openspace --help                                     # verify the REAL package (headless CLI)
 ```
-Set `OPENSPACE_MODEL` / `OPENSPACE_LLM_*` to your provider (Anthropic key available). No cloud login
-needed for the local-first run+evolve path (supply-chain: self-host, pin deps, read before run).
+**⚠️ Do NOT use `pip install -e .` (editable) — verified broken 2026-07-20.** The PEP 660 editable
+finder leaves `import openspace` as a namespace package (`__file__=None`) and the CLI dies with
+`ModuleNotFoundError`. A plain non-editable `pip install .` (or `pip install --no-deps
+--force-reinstall .`) maps the package correctly and the CLI works.
+
+**⚠️ The default `--tui` / `--doctor` path needs a built Node TUI artifact that isn't shipped** —
+run **headless** with `openspace --no-ui --query "<task>"`. Set `OPENSPACE_LLM_API_KEY` +
+`OPENSPACE_MODEL` (litellm ids, e.g. `anthropic/claude-sonnet-4-5`). No cloud login needed for the
+local-first run+evolve path (supply-chain: self-host, pin deps, read before run).
 
 ## Trial protocol (local-first)
 1. Register this repo's skills (see `INVENTORY.md`) into OpenSpace.
