@@ -9,40 +9,40 @@
 
 A newer aging-relevant publication than our curated entry was found for the researchers below. **Strong** = an aging term is in the title; **weak** = only in the abstract (likely a same-surname false match — check identity first).
 
+### João Pedro de Magalhães  · _relevance: strong_
+- **Found:** [A brief history of the hyperfunction theory of aging and future directions](https://doi.org/10.18632/aging.206403) — _MED, 2026_ (pub 2026-07-24)
+- **⚠ Confirm identity:** matched on author `Magalhaes JP` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** Translational toolkit for reproducible, cross-study profiling of human ageing hallmarks _(2026)_
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Aging remains a mystery of biology, and debate regarding why we age has been ongoing for centuries. Many theories of aging have been proposed, most of which focus on errors and the gradual accumulation of molecular damage. By contrast, aging may be primarily a programmatic process, arising from developmental programs that continue to run later in life and, as a form of antagonistic pleiotropy, become detrimental. Here, I review the history of programmatic theories of aging, from early caloric restriction experiments to more recent conceptual frameworks to which Mikhail Blagosklonny made key co
+
+### Alex Zhavoronkov  · _relevance: strong_
+- **Found:** [A combined artificial intelligence-wet lab approach identifies a pivotal role of the NAD&lt;sup&gt;+&lt;/sup&gt;-mitophagy axis on aging and neurodegeneration](https://doi.org/10.1002/alz.71680) — _MED, 2026_ (pub 2026-08-01)
+- **⚠ Confirm identity:** matched on author `Zhavoronkov A` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** The End of Aging Clocks: Training Foundation Models to Reason in Aging and Longevity _(2026)_
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Introduction Emerging evidence points to a role of nicotinamide mononucleotide (NAD + ) depletion and compromised mitophagy in aging and neurodegenerative diseases. We hypothesize that age-dependent impairment of the NAD + -mitophagy axis contributes to brain aging and neurodegeneration. Methods We analyzed transcriptomic data from 12 human brain regions across 77 integrated public datasets spanning major neurodegenerative diseases and controls to assess NAD + -mitophagy axis alterations, focusing on Alzheimer's disease (AD). Key targets were validated in Caenorhabditis elegans, a human Tau ce
+
 ### Tony Wyss-Coray  · _relevance: strong_
-- **Found:** [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — _MED, 2026_ (pub 2026-07-09)
+- **Found:** [Core activation program and selective regional responsiveness of microglia during aging and parabiosis](https://doi.org/10.1016/j.celrep.2026.117919) — _MED, 2026_ (pub 2026-08-28)
 - **⚠ Confirm identity:** matched on author `Wyss-Coray T` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** Plasma proteomic signatures of cellular aging predict human disease _(2026)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > There are extensive ongoing efforts to slow or even reverse human aging, such as with epigenetic cellular reprogramming, thymus rejuvenation or senolytics. In parallel, new and diverse metrics-known as biological clocks-have been discovered and shown to track the pace of aging in an individual and their organs, tissues and cells. These clocks have multiple potential use cases, including identifying people at high risk of disease, serving as a foundation for prevention or early detection, and determining whether lifestyle factors or an intervention can modulate the aging process. This review pr
-
-### Vadim Gladyshev  · _relevance: strong_
-- **Found:** [Systemic epigenetic dysregulation as a driver of ageing and a therapeutic target](https://doi.org/10.1038/s41580-026-00958-0) — _MED, 2026_ (pub 2026-03-27)
-- **⚠ Confirm identity:** matched on author `Gladyshev V` — open the link and check it is the same person before promoting (initials-match ≠ proof).
-- **We currently list:** Mammalian aging involves genome-wide splicing degeneration leading to functional decline _(2026)_
-- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Although epigenetic changes during ageing are well documented, we lack an integrated framework to systematically explain their mechanistic relationships. In this Review, we present a systems-level framework that demonstrates how epigenetic regulation controls ageing. We discuss four interdependent processes through which epigenetic fidelity - the capacity of chromatin regulatory systems to maintain precise gene expression states - progressively fails: deterioration of nuclear architecture, including breakdown of lamina-associated domains; dysregulation of epigenetic memory through chromatin-mo
+  > Aging is associated with immune dysregulation in the brain and is the greatest risk factor for many neurodegenerative diseases. Rejuvenation interventions can mediate beneficial effects. Microglia are major contributors to neurodegenerative disease progression; however, the molecular changes underlying brain aging and rejuvenation remain poorly understood at the single-cell level. We identified and benchmarked several reproducible microglial states and a core set of genes that drive microglial activation in the mouse brain. We investigated microglial heterogeneity and examined the impact of ag
 
 ### Nir Barzilai  · _relevance: strong_
-- **Found:** [Cognitive Aging and Brain Health: A Comparison of Super Movers vs Nonsuper Movers](https://doi.org/10.1212/wnl.0000000000214776) — _MED, 2026_ (pub 2026-06-16)
+- **Found:** [Exceptional Parental Longevity and Onset of Morbidity and Mortality Across Cohorts](https://doi.org/10.1001/jamanetworkopen.2026.30964) — _MED, 2026_ (pub 2026-08-03)
 - **⚠ Confirm identity:** matched on author `Barzilai N` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > <h4>Background and objectives</h4>Super movers are individuals aged ≥80 years with gait speeds ≥1.5 SDs above age- and sex-adjusted means. Super movers tend to have lower prevalence of chronic medical conditions, healthier lifestyles, and younger biological age. The aim of this study was to examine their risk of incident cognitive impairment, trajectories of cognitive decline, and brain health.<h4>Methods</h4>This study used a retrospective study design using data from older adults aged ≥80 without Alzheimer disease or dementia enrolled in 5 Health and Retirement Study International Network of
+  > Importance Centenarian lifespan extension is frequently accompanied by delayed onset of aging-associated diseases. Understanding the transgenerational patterns of this phenomenon is crucial for informing investigations of genetic and environmental factors that promote healthy aging. Objectives To evaluate the extent and consistency with which centenarians' offspring exhibit delayed onset of death and age-associated morbidities as well as decreased risk of age-related morbidities across independent cohorts. Design, setting, and participants Three independent longitudinal cohorts were studied: L
 
-### David Sinclair  · _relevance: strong_
-- **Found:** [The association of frailty with age and lifespan in mice differs by strain and sex](https://doi.org/10.1093/gerona/glag167) — _MED, 2026_ (pub 2026-06-26)
-- **⚠ Confirm identity:** matched on author `Sinclair D` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+### Eric Verdin  · _relevance: strong_
+- **Found:** [Author Correction: Trained immunity links hematopoietic stem cell aging to aging-associated inflammation](https://doi.org/10.1038/s43587-026-01213-z) — _MED, 2026_ (pub 2026-08-12)
+- **⚠ Confirm identity:** matched on author `Verdin E` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Frailty indices have been assessed in mouse models for more than a decade, but the effect of sex and strain on frailty outcomes remains poorly understood. Here, we collated and harmonized item-level 31-item clinical frailty index (FI) and lifespan data from 17 independent cohorts, including 1,564 naturally aging mice (690 females, 874 males) across five commonly used mouse strains or substrains: C57BL/6JNIA, C57BL/6N, C57BL/6J, UM-HET3, and Diversity Outbred. A total of 3,665 observations were included across cross-sectional and longitudinal studies, some previously published, with 2,192 obser
-
-### Charles Brenner  · _relevance: strong_
-- **Found:** [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarcoma as a potential biomarker for NAMPT inhibition](https://doi.org/10.1158/1535-7163.mct-25-0619) — _MED, 2026_ (pub 2026-04-21)
-- **⚠ Confirm identity:** matched on author `Brenner C` — open the link and check it is the same person before promoting (initials-match ≠ proof).
-- **We currently list:** (not in frontier.yml yet)
-- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > New treatments are needed to improve survival in children with rhabdomyosarcoma (RMS). NAD⁺ biosynthesis, regulated by the enzymes NAPRT and NAMPT, represents a metabolic vulnerability due to high NAD⁺ turnover in cancers. Although NAMPT inhibitors (NAMPTi) show preclinical promise, clinical translation has been limited by toxicity and the lack of predictive biomarkers. Here, we evaluated NAPRT expression in RMS and its potential as an actionable biomarker to guide NAMPTi therapy. NAPRT promoter methylation, transcript levels, and protein expression were assessed in RMS cells, patient-derived 
+  > (no abstract returned — open the link to source a quote)
 
 ### Joe Betts-LaCroix  · _relevance: strong_
 - **Found:** [Toward actionable interventions in human aging (12th ARDD meeting, 2025)](https://doi.org/10.18632/aging.206368) — _MED, 2026_ (pub 2026-04-06)
@@ -50,20 +50,6 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > The 12th Aging Research and Drug Discovery (ARDD) meeting convened at the University of Copenhagen, presenting a comprehensive overview of recent advancements in the biology of aging. A central theme across sessions was the field's gradual shift from descriptive, correlational studies to mechanistic understandings enabling the engineering of personalized therapeutic interventions aimed at extending human healthspan. Key discussions highlighted the convergence of multiple disciplines. Presentations detailed how fundamental biological insights are being integrated with artificial intelligence an
-
-### João Pedro de Magalhães  · _relevance: weak_
-- **Found:** [Synergistic Relationship between Muscle Thickness and Cellular Health after Resistance Training in Older Women](https://doi.org/10.1249/mss.0000000000003884) — _MED, 2026_ (pub 2025-10-27)
-- **⚠ Confirm identity:** matched on author `Magalhaes JP` — open the link and check it is the same person before promoting (initials-match ≠ proof).
-- **We currently list:** Translational toolkit for reproducible, cross-study profiling of human ageing hallmarks _(2026)_
-- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > <h4>Purpose</h4>This study investigated the relationship between muscle thickness and raw and derived bioelectrical impedance analysis (BIA) parameters following 12 wk of resistance training (RT) in older women.<h4>Methods</h4>Fifty-five older women were assigned to a control group ( n = 31) or an RT group ( n = 24). Muscle thickness was assessed using B-mode ultrasound, while BIA parameters, including reactance (Xc), resistance (R), phase angle (PhA), intracellular water, extracellular water (ECW), and total body water, were measured at 50 kHz. Total and appendicular lean soft tissue and fat 
-
-### Alex Zhavoronkov  · _relevance: weak_
-- **Found:** [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — _MED, 2026_ (pub 2026-04-20)
-- **⚠ Confirm identity:** matched on author `Zhavoronkov A` — open the link and check it is the same person before promoting (initials-match ≠ proof).
-- **We currently list:** The End of Aging Clocks: Training Foundation Models to Reason in Aging and Longevity _(2026)_
-- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Drug discovery and development is time-intensive, expensive and laden with risk. Identifying the right drug targets is crucial for increasing the probability of success, but traditional target identification and validation often take years, and a target is only fully validated once a drug based on it receives approval by regulatory agencies. Given its proficiency in analysing large datasets and intricate biological networks, artificial intelligence (AI) is playing an increasingly important role in drug target identification and assessment. This article reviews recent advances in target discove
 
 ### Peter Fedichev  · _relevance: weak_
 - **Found:** [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — _MED, 2026_ (pub 2026-05-14)
@@ -73,11 +59,11 @@ A newer aging-relevant publication than our curated entry was found for the rese
   > The inaugural Global Conference on Gerophysics convened 160 researchers across physics, biology, computation, and medicine in Singapore on March 5-6, 2025. With 31 speakers, the two-day event explored how physical laws, and quantitative principles unify aging science, linking biological processes to longevity patterns. Sessions covered diverse aging aspects, from developmental stages to species comparisons. The meeting showcased innovative methods to study aging, emphasizing data-driven insights. A central theme was bridging theory and experiment to advance understanding. It concluded with a c
 
 ### Jacob Kimmel  · _relevance: weak_
-- **Found:** [CUT&amp;Tag and DiBioCUT&amp;Tag enable investigation of the AT-rich epigenome of Plasmodium falciparum from low-input samples](https://doi.org/10.1016/j.crmeth.2025.101110) — _MED, 2025_ (pub 2025-07-16)
+- **Found:** [Protein landscape of the chromatin domains in the malaria parasite Plasmodium falciparum](https://doi.org/10.1016/j.chom.2026.07.016) — _MED, 2026_ (pub 2026-08-17)
 - **⚠ Confirm identity:** matched on author `Kimmel J` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** In silico design of epigenetic reprogramming payloads _(2025)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Phenotypic variation between malaria parasites is a major contributor to the pathogen's success, facilitated by heritable yet dynamic changes in (hetero)chromatin structure. Currently, the chromatin landscape is mostly profiled by chromatin immunoprecipitation sequencing (ChIP-seq), which has several drawbacks: (1) GC-content-related artifacts, (2) substantial material requirement, and (3) a labor-intensive protocol. To overcome these limitations, we adapted cleavage under targets and tagmentation (CUT&Tag) to Plasmodium falciparum. Despite the AT richness of the genome, CUT&Tag results in rep
+  > Epigenetic regulation is essential for development and adaptation across eukaryotes. However, a comprehensive overview of the molecular framework of chromatin-mediated regulation, particularly in non-model organisms, is lacking. Here, we present a systematic proteomic characterization of the chromatin domains in P. falciparum, an ancient human pathogen with a unique genome composition and epigenetic blueprint. We adapted and employed three proximity-labeling approaches to provide a high-confidence and comprehensive proteome of heterochromatin, euchromatin, and (peri)centromeric chromatin compr
 
 ### Morgan Levine  · _relevance: weak_
 - **Found:** [Resolving parameter uncertainty in SIR models through population-level serological surveillance: A synthetic study](https://doi.org/10.1016/j.idm.2026.05.004) — _MED, 2026_ (pub 2026-05-14)
@@ -86,12 +72,19 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Epidemic models face a critical challenge: surveillance systems capture only a fraction of infections (often <10%). We reveal two fundamental problems. First, when models ignore underdetection entirely-treating detected cases as complete-parameter errors exceed 1000% despite visually reasonable fits. Second, when models explicitly account for underdetection by including case detection ratios as unknown parameters, structural identifiability analysis proves transmission rates and detection ratios become mathematically confounded-rendering infinite epidemiologically distinct scenarios equally pl
 
+### Vadim Gladyshev  · _relevance: weak_
+- **Found:** [Nutritional Strategies for Targeting Biological Age](https://doi.org/10.1146/annurev-nutr-062322-025848) — _MED, 2026_ (pub 2026-08-01)
+- **⚠ Confirm identity:** matched on author `Gladyshev V` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** Mammalian aging involves genome-wide splicing degeneration leading to functional decline _(2026)_
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Biological age represents a quantifiable measure of physiological health that can be assessed using molecular biomarkers and potentially modulated through interventions. This review examines nutritional strategies affecting biological age in model organisms and humans, emphasizing recent clinical trials employing composite omics-based aging biomarkers. Accumulating evidence demonstrates that caloric restriction, Mediterranean diet, intermittent fasting (IF), and micronutrient supplementation are associated with reduced biological age, while obesity, inflammatory dietary patterns, and malnutrit
+
 ### George Church  · _relevance: weak_
 - **Found:** [Derivation of elephant induced pluripotent stem cells](https://doi.org/10.1038/s41592-026-03136-4) — _MED, 2026_ (pub 2026-06-22)
 - **⚠ Confirm identity:** matched on author `Church G` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** Replacement as an aging intervention (Nature Aging Perspective) _(2025)_
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > Biodiversity loss in the present era requires new tools for studying nonmodel organisms. Elephants are both an endangered species and excellent models for studying complex phenotypes including size, social behavior and longevity. Here we report the first derivation of elephant (Elephas maximus) induced pluripotent stem (emiPS) cells. We achieved emiPS cells using two approaches: (1) a two-step process of chemical media induction and colony selection followed by over-expression of elephant transcription factors; and (2) a one-step process with transcription factors and HRAS mutant, HRAS<sub>G12
+  > Biodiversity loss in the present era requires new tools for studying nonmodel organisms. Elephants are both an endangered species and excellent models for studying complex phenotypes including size, social behavior and longevity. Here we report the first derivation of elephant (Elephas maximus) induced pluripotent stem (emiPS) cells. We achieved emiPS cells using two approaches: (1) a two-step process of chemical media induction and colony selection followed by over-expression of elephant transcription factors; and (2) a one-step process with transcription factors and HRAS mutant, HRAS G12V . 
 
 ### Matt Kaeberlein  · _relevance: weak_
 - **Found:** [Multimorbidity as a predictor of mortality in companion dogs](https://doi.org/10.1007/s11357-026-02342-4) — _MED, 2026_ (pub 2026-06-01)
@@ -100,19 +93,26 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Multimorbidity, the presence of two or more conditions, is associated with a higher risk of death as individuals age. However, modeling multimorbidity in laboratory animals is difficult, if not impossible, because specific conditions are seldom individually diagnosed and treated in these settings. Because of their shared environment, physiology, and genetic diversity, and because they are medically managed as individuals, companion dogs have potential to serve as a translational multimorbidity model. Yet it is unknown how diagnoses accumulate over time, how these diagnoses are associated with 
 
-### Eric Verdin  · _relevance: weak_
-- **Found:** [Author Correction: Regulation of urea cycle by reversible high-stoichiometry lysine succinylation](https://doi.org/10.1038/s42255-026-01549-1) — _MED, 2026_ (pub 2026-06-01)
-- **⚠ Confirm identity:** matched on author `Verdin E` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+### David Sinclair  · _relevance: weak_
+- **Found:** [From Confidence to Coverage: A Multi-Stakeholder Perspective on Vaccination in Central and Eastern Europe](https://doi.org/10.3390/vaccines14080678) — _MED, 2026_ (pub 2026-08-06)
+- **⚠ Confirm identity:** matched on author `Sinclair D` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > (no abstract returned — open the link to source a quote)
+  > Central and Eastern Europe (CEE) carries some of the widest immunisation gaps in Europe, and improving coverage there is often treated as a problem of access infrastructure. On 14 May 2026, a multi-stakeholder meeting hosted at the Romanian Parliament brought together around twenty-five speakers, among some fifty participants in all, from Romania, Poland, the Czech Republic, and Bulgaria, together with international contributors, to agree which barriers to vaccine confidence matter most in the region, which interventions are deliverable within 12 to 24 months, and how responsibility for them s
 
 ### Andrew Steele  · _relevance: weak_
 - **Found:** [Clinical Validation of the Roche cobas and cobas 4800 Human Papillomavirus Tests on Self-Collected Vaginal Dry Swabs versus Practitioner-Collected Cervical Specimens Using the VALHUDES Protocol](https://doi.org/10.1016/j.jmoldx.2026.05.009) — _MED, 2026_ (pub 2026-06-19)
 - **⚠ Confirm identity:** matched on author `Steele A` — open the link and check it is the same person before promoting (initials-match ≠ proof).
 - **We currently list:** (not in frontier.yml yet)
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
-  > The first national human papillomavirus (HPV)-based cervical screening programs began in 2017. Since then, a growing list of countries have moved, or want to move, to HPV-based screening. One of the benefits of HPV-based screening is that a sample does not need to be collected from the cervix by a health care practitioner. Self-collection has been demonstrated to give equivalent accuracy as practitioner-collected specimens when a PCR-based clinically validated HPV assay is used. However, there are few clinically validated, PCR-based, HPV assays with on-label claims for self-collection. The cur
+  > The first national human papillomavirus (HPV)-based cervical screening programs began in 2017. Since then, a growing list of countries have moved, or want to move, to HPV-based screening. A benefit of HPV-based screening is that a sample does not need to be collected from the cervix by a health care practitioner. Self-collection has been demonstrated to give equivalent accuracy as practitioner-collected specimens when PCR-based clinically validated HPV assays are used. However, there are few clinically validated, PCR-based, HPV assays with on-label claims for self-collection. The current study
+
+### Charles Brenner  · _relevance: weak_
+- **Found:** [Chemotherapy Enrichment of ID Family Expression Is Associated with IL-6 Signaling in Ovarian Cancer](https://doi.org/10.3390/cancers18081186) — _MED, 2026_ (pub 2026-04-08)
+- **⚠ Confirm identity:** matched on author `Brenner C` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** (not in frontier.yml yet)
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Background/Objectives : Ovarian cancer (OC) remains the most lethal gynecologic malignancy, largely due to late-stage diagnosis and high rates of recurrence following platinum-based chemotherapy. Growing evidence implicates cancer stem-like cells (CSCs) in OC relapse, as these cells exhibit enhanced chemoresistance, stemness, epithelial-mesenchymal transition (EMT), and the capacity to remodel the tumor microenvironment. Inhibitors of DNA-binding (ID) 1-4 proteins are transcription factors with known redundancy; however, their collective role in OC chemotherapy response remains poorly defined.
 
 ### Kristen Fortney  · _relevance: weak_
 - **Found:** [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — _MED, 2026_ (pub 2026-04-20)
@@ -121,35 +121,52 @@ A newer aging-relevant publication than our curated entry was found for the rese
 - **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
   > Drug discovery and development is time-intensive, expensive and laden with risk. Identifying the right drug targets is crucial for increasing the probability of success, but traditional target identification and validation often take years, and a target is only fully validated once a drug based on it receives approval by regulatory agencies. Given its proficiency in analysing large datasets and intricate biological networks, artificial intelligence (AI) is playing an increasingly important role in drug target identification and assessment. This article reviews recent advances in target discove
 
+### Marinka Zitnik  · _relevance: weak_
+- **Found:** [Unifying the odyssey: artificial intelligence for rare disease diagnosis and therapy](https://doi.org/10.1007/s12553-026-01057-y) — _MED, 2026_ (pub 2026-03-10)
+- **⚠ Confirm identity:** matched on author `Zitnik M` — open the link and check it is the same person before promoting (initials-match ≠ proof).
+- **We currently list:** ATHENA-R1: An AI agent for treatment reasoning over a biomedical tool universe _(2026)_
+- **Verbatim quote:** pick one sentence from the abstract below and paste into `quote:` (do NOT paraphrase):
+  > Purpose To summarize current challenges in rare disease (RD) diagnosis and therapy, highlight recent advances in artificial intelligence (AI) for RDs, and propose a model future state for RD patient care. Methods Multidisciplinary expert-led narrative review summarizing modern practical challenges and rate-limiting steps in RD patient care, citing key clinical and research considerations with respect to regulatory and economic constraints. Results Over 10,000 known RDs collectively affect 1 in 10 Americans, a total of over 30 million people. Annually, RDs account for over $1 trillion of annual
+
 ## B) Roadmap signal
 
 Fresh works cluster on these topics — check each against `data/roadmap.yml` and decide if a phase/week should shift (attach the evidence link if you do):
 
-- **interventions** (6 fresh work(s): Alex Zhavoronkov, Charles Brenner, Joe Betts-LaCroix, Kristen Fortney, Peter Fedichev, Tony Wyss-Coray)
-  - evidence: [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — Alex Zhavoronkov, 2026
+- **interventions** (8 fresh work(s): David Sinclair, Joe Betts-LaCroix, João Pedro de Magalhães, Kristen Fortney, Marinka Zitnik, Peter Fedichev, Tony Wyss-Coray, Vadim Gladyshev)
+  - evidence: [A brief history of the hyperfunction theory of aging and future direct](https://doi.org/10.18632/aging.206403) — João Pedro de Magalhães, 2026
   - evidence: [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — Peter Fedichev, 2026
-  - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
-  - evidence: [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarco](https://doi.org/10.1158/1535-7163.mct-25-0619) — Charles Brenner, 2026
+  - evidence: [Core activation program and selective regional responsiveness of micro](https://doi.org/10.1016/j.celrep.2026.117919) — Tony Wyss-Coray, 2026
+  - evidence: [Nutritional Strategies for Targeting Biological Age](https://doi.org/10.1146/annurev-nutr-062322-025848) — Vadim Gladyshev, 2026
+  - evidence: [From Confidence to Coverage: A Multi-Stakeholder Perspective on Vaccin](https://doi.org/10.3390/vaccines14080678) — David Sinclair, 2026
   - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
   - evidence: [Target identification and assessment in the era of AI](https://doi.org/10.1038/s41573-026-01412-8) — Kristen Fortney, 2026
-- **reprogramming** (4 fresh work(s): George Church, Peter Fedichev, Tony Wyss-Coray, Vadim Gladyshev)
+  - evidence: [Unifying the odyssey: artificial intelligence for rare disease diagnos](https://doi.org/10.1007/s12553-026-01057-y) — Marinka Zitnik, 2026
+- **hallmarks / mechanisms** (4 fresh work(s): Eric Verdin, Joe Betts-LaCroix, João Pedro de Magalhães, Vadim Gladyshev)
+  - evidence: [A brief history of the hyperfunction theory of aging and future direct](https://doi.org/10.18632/aging.206403) — João Pedro de Magalhães, 2026
+  - evidence: [Nutritional Strategies for Targeting Biological Age](https://doi.org/10.1146/annurev-nutr-062322-025848) — Vadim Gladyshev, 2026
+  - evidence: [Author Correction: Trained immunity links hematopoietic stem cell agin](https://doi.org/10.1038/s43587-026-01213-z) — Eric Verdin, 2026
+  - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
+- **AI / foundation models** (4 fresh work(s): Alex Zhavoronkov, Joe Betts-LaCroix, Nir Barzilai, Tony Wyss-Coray)
+  - evidence: [A combined artificial intelligence-wet lab approach identifies a pivot](https://doi.org/10.1002/alz.71680) — Alex Zhavoronkov, 2026
+  - evidence: [Core activation program and selective regional responsiveness of micro](https://doi.org/10.1016/j.celrep.2026.117919) — Tony Wyss-Coray, 2026
+  - evidence: [Exceptional Parental Longevity and Onset of Morbidity and Mortality Ac](https://doi.org/10.1001/jamanetworkopen.2026.30964) — Nir Barzilai, 2026
+  - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
+- **single-cell / multi-omics** (4 fresh work(s): Alex Zhavoronkov, Jacob Kimmel, Tony Wyss-Coray, Vadim Gladyshev)
+  - evidence: [A combined artificial intelligence-wet lab approach identifies a pivot](https://doi.org/10.1002/alz.71680) — Alex Zhavoronkov, 2026
+  - evidence: [Protein landscape of the chromatin domains in the malaria parasite Pla](https://doi.org/10.1016/j.chom.2026.07.016) — Jacob Kimmel, 2026
+  - evidence: [Core activation program and selective regional responsiveness of micro](https://doi.org/10.1016/j.celrep.2026.117919) — Tony Wyss-Coray, 2026
+  - evidence: [Nutritional Strategies for Targeting Biological Age](https://doi.org/10.1146/annurev-nutr-062322-025848) — Vadim Gladyshev, 2026
+- **reprogramming** (3 fresh work(s): George Church, Peter Fedichev, Tony Wyss-Coray)
   - evidence: [Foundations of Gerophysics](https://doi.org/10.18632/aging.206378) — Peter Fedichev, 2026
-  - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
-  - evidence: [Systemic epigenetic dysregulation as a driver of ageing and a therapeu](https://doi.org/10.1038/s41580-026-00958-0) — Vadim Gladyshev, 2026
+  - evidence: [Core activation program and selective regional responsiveness of micro](https://doi.org/10.1016/j.celrep.2026.117919) — Tony Wyss-Coray, 2026
   - evidence: [Derivation of elephant induced pluripotent stem cells](https://doi.org/10.1038/s41592-026-03136-4) — George Church, 2026
-- **aging clocks** (4 fresh work(s): Charles Brenner, Nir Barzilai, Tony Wyss-Coray, Vadim Gladyshev)
-  - evidence: [Biological aging clocks in health and disease](https://doi.org/10.1038/s41591-026-04495-3) — Tony Wyss-Coray, 2026
-  - evidence: [Systemic epigenetic dysregulation as a driver of ageing and a therapeu](https://doi.org/10.1038/s41580-026-00958-0) — Vadim Gladyshev, 2026
-  - evidence: [Cognitive Aging and Brain Health: A Comparison of Super Movers vs Nons](https://doi.org/10.1212/wnl.0000000000214776) — Nir Barzilai, 2026
-  - evidence: [NAPRT expression and epigenetic regulation in pediatric rhabdomyosarco](https://doi.org/10.1158/1535-7163.mct-25-0619) — Charles Brenner, 2026
-- **AI / foundation models** (1 fresh work(s): Joe Betts-LaCroix)
-  - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
-- **hallmarks / mechanisms** (1 fresh work(s): Joe Betts-LaCroix)
-  - evidence: [Toward actionable interventions in human aging (12th ARDD meeting, 202](https://doi.org/10.18632/aging.206368) — Joe Betts-LaCroix, 2026
+- **aging clocks** (2 fresh work(s): Jacob Kimmel, Vadim Gladyshev)
+  - evidence: [Protein landscape of the chromatin domains in the malaria parasite Pla](https://doi.org/10.1016/j.chom.2026.07.016) — Jacob Kimmel, 2026
+  - evidence: [Nutritional Strategies for Targeting Biological Age](https://doi.org/10.1146/annurev-nutr-062322-025848) — Vadim Gladyshev, 2026
 
 ## Coverage (honest ledger)
 
-- Researchers checked: **16**
-- Newer-work proposals: **16**
+- Researchers checked: **17**
+- Newer-work proposals: **17**
 - None found (searched, empty): **0**
 - Errors (not measured this run): **0**
