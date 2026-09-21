@@ -292,6 +292,25 @@
       "type": "org"
     },
     {
+      "id": "person:Marinka Zitnik",
+      "label": "Marinka Zitnik",
+      "type": "person",
+      "url": "https://zitniklab.hms.harvard.edu",
+      "ai": true
+    },
+    {
+      "id": "org:Harvard Medical School (Zitnik Lab / mims-harvard)",
+      "label": "Harvard Medical School (Zitnik Lab / mims-harvard)",
+      "type": "org"
+    },
+    {
+      "id": "work:Marinka Zitnik",
+      "label": "ATHENA-R1: An AI agent for treatment reasoning over a biomed",
+      "type": "work",
+      "url": "https://github.com/mims-harvard/ATHENA",
+      "since": 2026
+    },
+    {
       "id": "org:NewLimit",
       "label": "NewLimit",
       "type": "org",
@@ -617,6 +636,17 @@
       "rel": "works-on"
     },
     {
+      "source": "person:Marinka Zitnik",
+      "target": "org:Harvard Medical School (Zitnik Lab / mims-harvard)",
+      "rel": "affiliated"
+    },
+    {
+      "source": "person:Marinka Zitnik",
+      "target": "work:Marinka Zitnik",
+      "rel": "authored",
+      "since": 2026
+    },
+    {
       "source": "org:NewLimit",
       "target": "topic:reprogramming",
       "rel": "builds"
@@ -693,7 +723,7 @@
     }
   ],
   "counts": {
-    "nodes": 60,
-    "links": 61
+    "nodes": 63,
+    "links": 63
   }
 }
